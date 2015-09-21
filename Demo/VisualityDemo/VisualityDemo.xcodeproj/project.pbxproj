@@ -20,6 +20,7 @@
 		694A60731BB0B230007D2837 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60721BB0B230007D2837 /* CircleView.swift */; settings = {ASSET_TAGS = (); }; };
 		694DB7C11BB0B8D6002FD338 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DB7C01BB0B8D6002FD338 /* CircleView.xib */; settings = {ASSET_TAGS = (); }; };
 		694DB7D01BB0C562002FD338 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DB7CF1BB0C562002FD338 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		694A60721BB0B230007D2837 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		694DB7C01BB0B8D6002FD338 /* CircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
 		694DB7CF1BB0C562002FD338 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
+		694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionListOfColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,8 @@
 		694A60231BB0A056007D2837 /* VisualityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				694DB7D11BB0CAE1002FD338 /* Classes */,
+				694DB7D21BB0CAE1002FD338 /* Extensions */,
 				694A60521BB0A07C007D2837 /* Flows */,
 				694A60591BB0A0BD007D2837 /* Libraries */,
 				694A60241BB0A056007D2837 /* AppDelegate.swift */,
@@ -230,6 +234,21 @@
 				694DB7C01BB0B8D6002FD338 /* CircleView.xib */,
 			);
 			path = CircleView;
+			sourceTree = "<group>";
+		};
+		694DB7D11BB0CAE1002FD338 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		694DB7D21BB0CAE1002FD338 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +384,7 @@
 			files = (
 				694DB7D01BB0C562002FD338 /* UIViewExtensionLayout.swift in Sources */,
 				694A60731BB0B230007D2837 /* CircleView.swift in Sources */,
+				694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
 				694A606C1BB0A249007D2837 /* UIViewExtensionInitialization.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,

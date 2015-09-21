@@ -47,7 +47,7 @@ class CircleView: UIView {
         layer.borderColor = UIColor.blackColor().CGColor
         layer.borderWidth = 2.0
         
-        layer.backgroundColor = UIColor.greenColor().CGColor
+        layer.backgroundColor = UIColor.Visuality_PurpleColor.CGColor
     }
     
     
