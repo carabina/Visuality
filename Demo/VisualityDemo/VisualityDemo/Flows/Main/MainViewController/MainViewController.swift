@@ -52,8 +52,7 @@ class MainViewController: UIViewController {
         // Initialize circle view
         
         circleView = CircleView.VT_viewFromNibWithClassNameLocatedInMainBundle() as! CircleView
-        
-        containerForCircleView.addSubview(circleView)
+        circleView.VT_fillView(containerForCircleView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -67,7 +66,7 @@ class MainViewController: UIViewController {
         
         // Update circle view
         
-        circleView.frame = containerForCircleView.bounds
+        circleView.VT_fillSuperview()
         circleView.updateUI()
     }
     
