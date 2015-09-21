@@ -14,11 +14,12 @@
 		694A60451BB0A056007D2837 /* VisualityDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60441BB0A056007D2837 /* VisualityDemoUITests.swift */; };
 		694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60551BB0A09A007D2837 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		694A60581BB0A09A007D2837 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694A60561BB0A09A007D2837 /* MainViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		694A606A1BB0A205007D2837 /* NSBundleExtensionVisuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60691BB0A205007D2837 /* NSBundleExtensionVisuality.swift */; settings = {ASSET_TAGS = (); }; };
-		694A606C1BB0A249007D2837 /* UIViewExtensionVisuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A606B1BB0A249007D2837 /* UIViewExtensionVisuality.swift */; settings = {ASSET_TAGS = (); }; };
+		694A606A1BB0A205007D2837 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60691BB0A205007D2837 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
+		694A606C1BB0A249007D2837 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A606B1BB0A249007D2837 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
 		694A606F1BB0B130007D2837 /* NSObjectExtensionNamespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A606E1BB0B130007D2837 /* NSObjectExtensionNamespaces.swift */; settings = {ASSET_TAGS = (); }; };
 		694A60731BB0B230007D2837 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60721BB0B230007D2837 /* CircleView.swift */; settings = {ASSET_TAGS = (); }; };
 		694DB7C11BB0B8D6002FD338 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DB7C01BB0B8D6002FD338 /* CircleView.xib */; settings = {ASSET_TAGS = (); }; };
+		694DB7D01BB0C562002FD338 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DB7CF1BB0C562002FD338 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +53,12 @@
 		694A60461BB0A056007D2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694A60551BB0A09A007D2837 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		694A60561BB0A09A007D2837 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		694A60691BB0A205007D2837 /* NSBundleExtensionVisuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionVisuality.swift; sourceTree = "<group>"; };
-		694A606B1BB0A249007D2837 /* UIViewExtensionVisuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionVisuality.swift; sourceTree = "<group>"; };
+		694A60691BB0A205007D2837 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
+		694A606B1BB0A249007D2837 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
 		694A606E1BB0B130007D2837 /* NSObjectExtensionNamespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionNamespaces.swift; sourceTree = "<group>"; };
 		694A60721BB0B230007D2837 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		694DB7C01BB0B8D6002FD338 /* CircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
+		694DB7CF1BB0C562002FD338 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +193,7 @@
 		694A60671BB0A1E1007D2837 /* NSBundle */ = {
 			isa = PBXGroup;
 			children = (
-				694A60691BB0A205007D2837 /* NSBundleExtensionVisuality.swift */,
+				694A60691BB0A205007D2837 /* NSBundleExtensionContent.swift */,
 			);
 			path = NSBundle;
 			sourceTree = "<group>";
@@ -199,7 +201,8 @@
 		694A60681BB0A1E1007D2837 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				694A606B1BB0A249007D2837 /* UIViewExtensionVisuality.swift */,
+				694A606B1BB0A249007D2837 /* UIViewExtensionInitialization.swift */,
+				694DB7CF1BB0C562002FD338 /* UIViewExtensionLayout.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -360,12 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694DB7D01BB0C562002FD338 /* UIViewExtensionLayout.swift in Sources */,
 				694A60731BB0B230007D2837 /* CircleView.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
-				694A606C1BB0A249007D2837 /* UIViewExtensionVisuality.swift in Sources */,
+				694A606C1BB0A249007D2837 /* UIViewExtensionInitialization.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,
 				694A606F1BB0B130007D2837 /* NSObjectExtensionNamespaces.swift in Sources */,
-				694A606A1BB0A205007D2837 /* NSBundleExtensionVisuality.swift in Sources */,
+				694A606A1BB0A205007D2837 /* NSBundleExtensionContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,10 +501,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = VisualityDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.postscriptum.VisualityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -508,10 +515,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = VisualityDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.postscriptum.VisualityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

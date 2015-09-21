@@ -1,5 +1,5 @@
 //
-//  UIViewExtensionVisuality.swift
+//  UIViewExtensionInitialization.swift
 //  VisualityDemo
 //
 //  Created by Igor Matyushkin on 21.09.15.

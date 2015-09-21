@@ -1,5 +1,5 @@
 //
-//  NSBundleExtensionVisuality.swift
+//  NSBundleExtensionContent.swift
 //  VisualityDemo
 //
 //  Created by Igor Matyushkin on 21.09.15.
