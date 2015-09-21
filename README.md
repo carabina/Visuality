@@ -24,8 +24,8 @@ Examples of view initialization by using methods from `UIView` extension:
 
 ```swift
 /*
-* Initialize by nib name and bundle.
-*/
+ * Initialize by nib name and bundle.
+ */
 
 let someBundle1 = NSBundle(identifier: "com.example.SomeBundleIdentifier")
 
@@ -33,30 +33,30 @@ let someView1 = SomeView.VT_viewFromNibWithName("SomeNibName", locatedInBundle: 
 
 
 /*
-* Initialize by nib name and bundle identifier.
-*/
+ * Initialize by nib name and bundle identifier.
+ */
 
 let someView2 = SomeView.VT_viewFromNibWithName("SomeNibName", locatedInBundleWithIdentifier: "com.example.SomeBundleIdentifier")
 
 
 /*
-* Initialize by nib name located in main bundle.
-*/
+ * Initialize by nib name located in main bundle.
+ */
 
 let someView3 = SomeView.VT_viewFromNibLocatedInMainBundleWithNibName("SomeNibName")
 
 
 /*
-* Also, when you send nil as value for bundle,
-* view will be loaded from main bundle too.
-*/
+ * Also, when you send nil as value for bundle,
+ * view will be loaded from main bundle too.
+ */
 
 let someView4 = SomeView.VT_viewFromNibWithName("SomeNibName", locatedInBundle: nil)
 
 
 /*
-* Initialize from nib with class name and bundle.
-*/
+ * Initialize from nib with class name and bundle.
+ */
 
 let someBundle5 = NSBundle(identifier: "com.example.SomeBundleIdentifier")
 
@@ -64,23 +64,23 @@ let someView5 = SomeView.VT_viewFromNibWithClassNameLocatedInBundle(someBundle5)
 
 
 /*
-* Initialize from nib with class name and bundle identifier.
-*/
+ * Initialize from nib with class name and bundle identifier.
+ */
 
 let someView6 = SomeView.VT_viewFromNibWithClassNameLocatedInBundleWithIdentifier("com.example.SomeBundleIdentifier")
 
 
 /*
-* Initialize from nib with class name located in main bundle.
-*/
+ * Initialize from nib with class name located in main bundle.
+ */
 
 let someView7 = SomeView.VT_viewFromNibWithClassNameLocatedInMainBundle()
 
 
 /*
-* You can do the same thing by sending nil as value for bundle identifier.
-* In this case view will be loaded from main bundle too.
-*/
+ * You can do the same thing by sending nil as value for bundle identifier.
+ * In this case view will be loaded from main bundle too.
+ */
 
 let someView8 = SomeView.VT_viewFromNibWithClassNameLocatedInBundleWithIdentifier(nil)
 
