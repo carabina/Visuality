@@ -1,3 +1,7 @@
+<p align="center" >
+  <img src="https://github.com/igormatyushkin014/Visuality/blob/master/Logo/logo-300-300.png" alt="Visuality" title="Visuality">
+</p>
+
 # Visuality
 `Visuality` is a library for iOS which includes set of extensions that simplify work with UI. Written in Swift.
 
