@@ -8,9 +8,6 @@
 
 import UIKit
 
-class SomeView: UIView {
-}
-
 class MainViewController: UIViewController {
 
     // MARK: Class variables & properties

@@ -86,6 +86,25 @@ let someView8 = SomeView.VT_viewFromNibWithClassNameLocatedInBundleWithIdentifie
 
 ```
 
+*Layout*
+
+`Visuality` simplifies common tasks with view's layout.
+
+```swift
+/*
+ * Fit view in container.
+ */
+
+let someView = SomeView.VT_viewFromNibWithClassNameLocatedInMainBundle()
+someView.VT_fillView(containerView)
+
+/*
+ * Fit view in superview.
+ */
+
+someView.VT_fillSuperview()
+```
+
 **License**
 
 `Visuality` is available under the MIT license. See the `LICENSE` file for more info.
