@@ -63,7 +63,7 @@ class MainViewController: UIViewController {
         
         // Update circle view
         
-        circleView.VT_fillSuperview()
+        circleView.VT_fillView(containerForCircleView)
         circleView.updateUI()
     }
     
