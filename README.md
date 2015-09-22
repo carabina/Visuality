@@ -5,18 +5,18 @@
 # Visuality
 `Visuality` is a library for iOS which includes set of extensions that simplify work with UI. Written in Swift.
 
-**How To Get Started**
+##How To Get Started
 
 Copy content of `Visuality` folder to your project.
 
-**Requirements**
+## Requirements
 
 * iOS 7 and later
 * Xcode 7 and later
 
-**Usage**
+## Usage
 
-*View Initialization*
+### View Initialization
 
 This library solves a problem of loading views from nib, which usually requires to write a lot of code. With `Visuality` it's possible to initialize view with one line of code.
 
@@ -86,7 +86,7 @@ let someView8 = SomeView.VT_viewFromNibWithClassNameLocatedInBundleWithIdentifie
 
 ```
 
-*Layout*
+### Layout
 
 `Visuality` simplifies common tasks with view's layout.
 
@@ -102,9 +102,22 @@ someView.VT_fillView(containerView)
  * Fit view in superview.
  */
 
-someView.VT_fillSuperview()
+someView.VT_fillView(someView.superview!)
+
+/*
+ * Locate view in center of container.
+ */
+
+someView.VT_locateInCenterOfView(containerView)
+
+/*
+ * Do the same thing with superview.
+ */
+
+someView.VT_locateInCenterOfView(someView.superview!)
+
 ```
 
-**License**
+## License
 
 `Visuality` is available under the MIT license. See the `LICENSE` file for more info.
