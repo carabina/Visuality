@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircleView: UIView {
+class CircleView: VTGestureView {
     
     // MARK: Class variables & properties
     

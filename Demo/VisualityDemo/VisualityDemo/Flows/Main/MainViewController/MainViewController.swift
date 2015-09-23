@@ -49,6 +49,10 @@ class MainViewController: UIViewController {
         // Initialize circle view
         
         circleView = CircleView.VT_viewFromNibWithClassNameLocatedInMainBundle() as! CircleView
+        circleView.setAutomaticGestureHandlerEnabled(true, forGestureType: .Pan)
+        circleView.setAutomaticGestureHandlerEnabled(true, forGestureType: .Pinch)
+        circleView.setAutomaticGestureHandlerEnabled(true, forGestureType: .Rotation)
+        
         circleView.VT_fillView(containerForCircleView)
     }
     

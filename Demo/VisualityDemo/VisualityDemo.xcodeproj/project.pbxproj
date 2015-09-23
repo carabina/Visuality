@@ -21,6 +21,10 @@
 		69C672141BB2206B00ED0D72 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C6720F1BB2206B00ED0D72 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
 		69C672151BB2206B00ED0D72 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C672101BB2206B00ED0D72 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
 		69C672161BB2206B00ED0D72 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C672121BB2206B00ED0D72 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		69C6721F1BB221BF00ED0D72 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C6721E1BB221BF00ED0D72 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
+		69C672211BB221D400ED0D72 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C672201BB221D400ED0D72 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
+		69C672231BB2229400ED0D72 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C672221BB2229400ED0D72 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
+		69C672251BB2260B00ED0D72 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C672241BB2260B00ED0D72 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		69C6720F1BB2206B00ED0D72 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
 		69C672101BB2206B00ED0D72 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
 		69C672121BB2206B00ED0D72 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
+		69C6721E1BB221BF00ED0D72 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
+		69C672201BB221D400ED0D72 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
+		69C672221BB2229400ED0D72 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
+		69C672241BB2260B00ED0D72 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +186,10 @@
 		694A605A1BB0A0F6007D2837 /* Visuality */ = {
 			isa = PBXGroup;
 			children = (
-				69C6720B1BB2206B00ED0D72 /* Extensions */,
+				69C672171BB2217000ED0D72 /* Gestures */,
 				69C6720E1BB2206B00ED0D72 /* Initialization */,
 				69C672111BB2206B00ED0D72 /* Layout */,
+				69C6720B1BB2206B00ED0D72 /* Extensions */,
 			);
 			name = Visuality;
 			path = ../../../../Visuality;
@@ -249,6 +258,41 @@
 				69C672121BB2206B00ED0D72 /* UIViewExtensionLayout.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		69C672171BB2217000ED0D72 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				69C6721B1BB221AB00ED0D72 /* Types */,
+				69C6721C1BB221BF00ED0D72 /* Views */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		69C6721B1BB221AB00ED0D72 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				69C672201BB221D400ED0D72 /* VTGestureType.swift */,
+				69C672221BB2229400ED0D72 /* VTGestureState.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		69C6721C1BB221BF00ED0D72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69C6721D1BB221BF00ED0D72 /* VTGestureView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69C6721D1BB221BF00ED0D72 /* VTGestureView */ = {
+			isa = PBXGroup;
+			children = (
+				69C6721E1BB221BF00ED0D72 /* VTGestureView.swift */,
+				69C672241BB2260B00ED0D72 /* VTGestureViewDelegate.swift */,
+			);
+			path = VTGestureView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,12 +426,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C6721F1BB221BF00ED0D72 /* VTGestureView.swift in Sources */,
 				694A60731BB0B230007D2837 /* CircleView.swift in Sources */,
 				69C672151BB2206B00ED0D72 /* UIViewExtensionInitialization.swift in Sources */,
 				69C672161BB2206B00ED0D72 /* UIViewExtensionLayout.swift in Sources */,
 				694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */,
+				69C672231BB2229400ED0D72 /* VTGestureState.swift in Sources */,
 				69C672141BB2206B00ED0D72 /* NSBundleExtensionContent.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
+				69C672211BB221D400ED0D72 /* VTGestureType.swift in Sources */,
+				69C672251BB2260B00ED0D72 /* VTGestureViewDelegate.swift in Sources */,
 				69C672131BB2206B00ED0D72 /* NSObjectExtensionNamespaces.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,
 			);
