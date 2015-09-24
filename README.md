@@ -174,7 +174,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 }
 ```
 
-What's the difference? First of all, `VTNavigationManager` adds more flexibility to your code. In example above, there are two methods which was called on `VTNavigationManager`'s shared instance. The first method creates new window:
+What's the difference? First of all, `VTNavigationManager` adds more flexibility to your code. In example above, there are two methods which were called on `VTNavigationManager`'s shared instance. The first method creates new window:
 
 ```swift
 VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
@@ -217,6 +217,20 @@ If you want to use your custom class for navigation bar or toolbar inside of nav
 ```
 
 The first parameter is type of navigation controller. The second parameter is a type of navigation bar. Third parameter is a type of toolbar. And, finally, the last parameter is a configuration block for navigation controller.
+
+All navigation methods of `VTNavigationManager` returns manager's object, so you can write code with chain:
+
+```swift
+VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
+    window.backgroundColor = .whiteColor()
+    window.makeKeyAndVisible()
+    self.window = window
+}.switchToNavigationControllerOfType(UINavigationController.self) { (navigationController) -> Void in
+    let someViewController = SomeViewController()
+    navigationController.viewControllers = [someViewController]
+    navigationController.navigationBarHidden = true
+}
+```
 
 ## License
 
