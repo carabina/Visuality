@@ -263,6 +263,52 @@ VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) 
 }
 ```
 
+### Other classes and extensions
+
+#### Dispatch
+
+Usage of C methods to dispatch queues in Swift is not so easy and obvious like it was in Objective-C. That's why `VTDispatcher` class was created. It has methods that simplify some of the work with queues. For example:
+
+```swift
+/*
+ * You can create a queue and use it with `VTDispatcher`'s methods.
+ */
+
+let queueWithHighPriority = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
+
+VTDispatcher.sharedDispatcher().dispatchOnQueue(queueWithHighPriority, afterTimeInterval: 1.0) { () -> Void in
+    // Do something here...
+}
+
+/*
+ * Also, if you want to use queue with background priority, there's a ready method for this.
+ */
+
+VTDispatcher.sharedDispatcher().dispatchOnBackgroundQueueAfterTimeInterval(1.0) { () -> Void in
+    // Do something here...
+}
+
+/*
+ * Similar method exists for main queue.
+ */
+
+VTDispatcher.sharedDispatcher().dispatchOnMainQueueAfterTimeInterval(1.0) { () -> Void in
+    // Do something here...
+}
+```
+
+`VTDispatcher` class is designed with method chaining pattern, so you can write a code like this:
+
+```swift
+VTDispatcher.sharedDispatcher().dispatchOnMainQueueAfterTimeInterval(1.0) { () -> Void in
+    // Do something...
+}.dispatchOnBackgroundQueueAfterTimeInterval(3.8) { () -> Void in
+    // Do something...
+}.dispatchOnMainQueueAfterTimeInterval(0.9) { () -> Void in
+    // Do something...
+}
+```
+
 ## License
 
 `Visuality` is available under the MIT license. See the `LICENSE` file for more info.
