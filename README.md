@@ -271,7 +271,7 @@ Usage of C methods to dispatch queues in Swift is not so easy and obvious like i
 
 ```swift
 /*
- * You can create a queue and use it with `VTDispatcher`'s methods.
+ * You can create a queue and use it with dispatcher's methods.
  */
 
 let queueWithHighPriority = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
