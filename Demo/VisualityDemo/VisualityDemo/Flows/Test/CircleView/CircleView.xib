@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CircleView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djA-RH-NDh">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CircleView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="djA-RH-NDh">
                     <rect key="frame" x="8" y="280" width="584" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="U0o-rt-eVY"/>
@@ -20,9 +20,21 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can move and zoom it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="M1J-p3-MUf">
+                    <rect key="frame" x="8" y="328" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="oEG-6n-vgd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="M1J-p3-MUf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2xa-pC-j9X"/>
+                <constraint firstAttribute="trailing" secondItem="M1J-p3-MUf" secondAttribute="trailing" constant="8" id="6fm-gJ-y60"/>
+                <constraint firstItem="M1J-p3-MUf" firstAttribute="top" secondItem="djA-RH-NDh" secondAttribute="bottom" constant="8" id="6jP-hC-lTs"/>
                 <constraint firstItem="djA-RH-NDh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TzK-Bc-HO9"/>
                 <constraint firstAttribute="trailing" secondItem="djA-RH-NDh" secondAttribute="trailing" constant="8" id="USa-Be-AZY"/>
                 <constraint firstItem="djA-RH-NDh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vHe-h1-zrB"/>

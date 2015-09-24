@@ -42,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Create window and display main screen
         
+        let fullScreenView = FullScreenView.VT_viewFromNibWithClassNameLocatedInMainBundle()
+        
         VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
             // Initialize window
             
@@ -59,6 +61,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             navigationController.navigationBarHidden = true
             navigationController.viewControllers = [mainViewController]
+        }.addViewToKeyWindowAnimated(fullScreenView, withDuration: 2.0, prepareForAnimationBlock: { (view, window) -> Void in
+            view.frame = window.bounds
+            view.alpha = 0.0
+        }, animationBlock: { (view, window) -> Void in
+            view.alpha = 1.0
+        }) { (finished) -> Void in
+        }.addViewToKeyWindow(otherFullScreenView) { (view, window) -> Void in
         }
         
         
