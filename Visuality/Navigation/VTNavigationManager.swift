@@ -112,6 +112,65 @@ public class VTNavigationManager: NSObject {
         return self
     }
     
+    public func addViewToKeyWindow(view: UIView, withConfigurationBlock configurationBlock: ((view: UIView, window: UIWindow?) -> Void)?) -> VTNavigationManager {
+        // Retrieve key window
+        
+        let keyWindow = UIApplication.sharedApplication().keyWindow
+        
+        if keyWindow == nil {
+            configurationBlock?(view: view, window: nil)
+        }
+        else {
+            // Add view to window
+            
+            keyWindow!.addSubview(view)
+            
+            
+            // Configure view
+            
+            configurationBlock?(view: view, window: keyWindow)
+        }
+        
+        
+        // Return result
+        
+        return self
+    }
+    
+    public func addViewToKeyWindowAnimated(view: UIView, withDuration duration: NSTimeInterval, prepareForAnimationBlock: ((view: UIView, window: UIWindow) -> Void)?, animationBlock: ((view: UIView, window: UIWindow) -> Void)?, andCompletion completion: ((finished: Bool) -> Void)?) -> VTNavigationManager {
+        // Retrieve key window
+        
+        let keyWindow = UIApplication.sharedApplication().keyWindow
+        
+        if keyWindow == nil {
+            completion?(finished: false)
+        }
+        else {
+            // Add view to window
+            
+            keyWindow!.addSubview(view)
+            
+            
+            // Prepare for animation
+            
+            prepareForAnimationBlock?(view: view, window: keyWindow!)
+            
+            
+            // Start animation
+            
+            UIView.animateWithDuration(duration, animations: { () -> Void in
+                animationBlock?(view: view, window: keyWindow!)
+            }, completion: { (finished) -> Void in
+                completion?(finished: finished)
+            })
+        }
+        
+        
+        // Return result
+        
+        return self
+    }
+    
     
     // MARK: Private methods
     
