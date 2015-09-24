@@ -15,34 +15,20 @@ public class VTDispatcher: NSObject {
     
     // MARK: Class methods
     
-    public class func dispatchOnQueue(queue: dispatch_queue_t, afterTimeInterval timeInterval: NSTimeInterval, withBlock block: () -> Void) {
-        // Retrieve delay time
-        
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(timeInterval * Double(NSEC_PER_SEC)))
-        
-        
-        // Start dispatch
-        
-        dispatch_after(delayTime, queue) { () -> Void in
-            block()
+    public class func sharedDispatcher() -> VTDispatcher {
+        struct Singleton {
+            static var dispatcher = VTDispatcher()
         }
-    }
-    
-    public class func dispatchOnMainQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) {
-        // Retrieve queue
         
-        let queue = dispatch_get_main_queue()
-        
-        
-        // Start dispatch
-        
-        dispatchOnQueue(queue, afterTimeInterval: timeInterval) { () -> Void in
-            block()
-        }
+        return Singleton.dispatcher
     }
     
     
     // MARK: Initializers
+    
+    public override init() {
+        super.init()
+    }
     
     
     // MARK: Deinitializer
@@ -55,6 +41,60 @@ public class VTDispatcher: NSObject {
     
     
     // MARK: Public methods
+    
+    public func dispatchOnQueue(queue: dispatch_queue_t, afterTimeInterval timeInterval: NSTimeInterval, withBlock block: () -> Void) -> VTDispatcher {
+        // Retrieve delay time
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(timeInterval * Double(NSEC_PER_SEC)))
+        
+        
+        // Start dispatch
+        
+        dispatch_after(delayTime, queue) { () -> Void in
+            block()
+        }
+        
+        
+        // Return result
+        
+        return self
+    }
+    
+    public func dispatchOnBackgroundQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> VTDispatcher {
+        // Retrieve queue
+        
+        let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
+        
+        
+        // Start dispatch
+        
+        dispatchOnQueue(queue, afterTimeInterval: timeInterval) { () -> Void in
+            block()
+        }
+        
+        
+        // Return result
+        
+        return self
+    }
+    
+    public func dispatchOnMainQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> VTDispatcher {
+        // Retrieve queue
+        
+        let queue = dispatch_get_main_queue()
+        
+        
+        // Start dispatch
+        
+        dispatchOnQueue(queue, afterTimeInterval: timeInterval) { () -> Void in
+            block()
+        }
+        
+        
+        // Return result
+        
+        return self
+    }
     
     
     // MARK: Private methods
