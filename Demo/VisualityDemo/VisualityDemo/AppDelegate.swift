@@ -40,23 +40,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Protocol methods
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Initialize window
+        // Create window and display main screen
         
-        let frameForWindow = UIScreen.mainScreen().bounds
-        
-        window = UIWindow(frame: frameForWindow)
-        window!.backgroundColor = .whiteColor()
-        window!.makeKeyAndVisible()
-        
-        
-        // Switch to view controller
-        
-        let mainViewController = MainViewController()
-        
-        let navigationController = UINavigationController(rootViewController: mainViewController)
-        navigationController.navigationBarHidden = true
-        
-        window!.rootViewController = navigationController
+        VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
+            // Initialize window
+            
+            window.backgroundColor = .whiteColor()
+            window.makeKeyAndVisible()
+            
+            self.window = window
+        }.switchToNavigationControllerOfType(UINavigationController.self) { (navigationController) -> Void in
+            // Create main view controller
+            
+            let mainViewController = MainViewController()
+            
+            
+            // Update navigation controller
+            
+            navigationController.navigationBarHidden = true
+            navigationController.viewControllers = [mainViewController]
+        }
         
         
         // Return result

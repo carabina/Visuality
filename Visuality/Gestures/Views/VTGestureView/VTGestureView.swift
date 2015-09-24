@@ -66,6 +66,19 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    private var _delayForTapGestureAutomaticHandler: NSTimeInterval!
+    
+    private var delayForTapGestureAutomaticHandler: NSTimeInterval {
+        get {
+            return _delayForTapGestureAutomaticHandler
+        }
+        set {
+            // Update private variable
+            
+            _delayForTapGestureAutomaticHandler = newValue
+        }
+    }
+    
     private var _longPressGestureRecognizer: UILongPressGestureRecognizer!
     
     private var longPressGestureRecognizer: UILongPressGestureRecognizer {
@@ -84,6 +97,19 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
             // Update private variable
             
             _automaticHandlerForLongPressGestureEnabled = newValue
+        }
+    }
+    
+    private var _delayForLongPressGestureAutomaticHandler: NSTimeInterval!
+    
+    private var delayForLongPressGestureAutomaticHandler: NSTimeInterval {
+        get {
+            return _delayForLongPressGestureAutomaticHandler
+        }
+        set {
+            // Update private variable
+            
+            _delayForLongPressGestureAutomaticHandler = newValue
         }
     }
     
@@ -108,6 +134,19 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    private var _delayForPanGestureAutomaticHandler: NSTimeInterval!
+    
+    private var delayForPanGestureAutomaticHandler: NSTimeInterval {
+        get {
+            return _delayForPanGestureAutomaticHandler
+        }
+        set {
+            // Update private variable
+            
+            _delayForPanGestureAutomaticHandler = newValue
+        }
+    }
+    
     private var _pinchGestureRecognizer: UIPinchGestureRecognizer!
     
     private var pinchGestureRecognizer: UIPinchGestureRecognizer {
@@ -129,6 +168,19 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    private var _delayForPinchGestureAutomaticHandler: NSTimeInterval!
+    
+    private var delayForPinchGestureAutomaticHandler: NSTimeInterval {
+        get {
+            return _delayForPinchGestureAutomaticHandler
+        }
+        set {
+            // Update private variable
+            
+            _delayForPinchGestureAutomaticHandler = newValue
+        }
+    }
+    
     private var _rotationGestureRecognizer: UIRotationGestureRecognizer!
     
     private var rotationGestureRecognizer: UIRotationGestureRecognizer {
@@ -147,6 +199,19 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
             // Update private variable
             
             _automaticHandlerForRotationGestureEnabled = newValue
+        }
+    }
+    
+    private var _delayForRotationGestureAutomaticHandler: NSTimeInterval!
+    
+    private var delayForRotationGestureAutomaticHandler: NSTimeInterval {
+        get {
+            return _delayForRotationGestureAutomaticHandler
+        }
+        set {
+            // Update private variable
+            
+            _delayForRotationGestureAutomaticHandler = newValue
         }
     }
     
@@ -192,6 +257,19 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
             // Update private variable
             
             _automaticHandlerForSwipeGestureEnabled = newValue
+        }
+    }
+    
+    private var _delayForSwipeGestureAutomaticHandler: NSTimeInterval!
+    
+    private var delayForSwipeGestureAutomaticHandler: NSTimeInterval {
+        get {
+            return _delayForSwipeGestureAutomaticHandler
+        }
+        set {
+            // Update private variable
+            
+            _delayForSwipeGestureAutomaticHandler = newValue
         }
     }
     
@@ -247,6 +325,50 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    public func setDelayForGestureAutomaticHandler(delay: NSTimeInterval, forGestureType gestureType: VTGestureType) {
+        switch gestureType {
+        case .Tap:
+            _delayForTapGestureAutomaticHandler = delay
+            break
+        case .LongPress:
+            _delayForLongPressGestureAutomaticHandler = delay
+            break
+        case .Pan:
+            _delayForPanGestureAutomaticHandler = delay
+            break
+        case .Pinch:
+            _delayForPinchGestureAutomaticHandler = delay
+            break
+        case .Rotation:
+            _delayForRotationGestureAutomaticHandler = delay
+            break
+        case .Swipe:
+            _delayForSwipeGestureAutomaticHandler = delay
+            break
+        case .Unknown:
+            break
+        }
+    }
+    
+    public func delayForGestureAutomaticHandlerForGestureType(gestureType: VTGestureType) -> NSTimeInterval {
+        switch gestureType {
+        case .Tap:
+            return delayForTapGestureAutomaticHandler
+        case .LongPress:
+            return delayForLongPressGestureAutomaticHandler
+        case .Pan:
+            return delayForPanGestureAutomaticHandler
+        case .Pinch:
+            return delayForPinchGestureAutomaticHandler
+        case .Rotation:
+            return delayForRotationGestureAutomaticHandler
+        case .Swipe:
+            return delayForSwipeGestureAutomaticHandler
+        case .Unknown:
+            return 0.0
+        }
+    }
+    
     
     // MARK: Private methods
     
@@ -259,6 +381,11 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         // Disable all automatic gesture handlers by default
         
         disableAllAutomaticGestureHandlers()
+        
+        
+        // Remove delay for all automatic gesture handlers by default
+        
+        removeDelayForAllAutomaticGestureHandlers()
     }
     
     private func initializeGestureRecognizers() {
@@ -337,6 +464,12 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     private func disableAllAutomaticGestureHandlers() {
         for gestureType in VTGestureType.allTypes() {
             setAutomaticGestureHandlerEnabled(false, forGestureType: gestureType)
+        }
+    }
+    
+    private func removeDelayForAllAutomaticGestureHandlers() {
+        for gestureType in VTGestureType.allTypes() {
+            setDelayForGestureAutomaticHandler(0.0, forGestureType: gestureType)
         }
     }
     
@@ -463,18 +596,55 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         
         switch gestureState {
         case .Began:
-            let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
-            let translatedPoint = panGestureRecognizer.translationInView(self)
-            center = CGPointMake(center.x + translatedPoint.x, center.y + translatedPoint.y)
-            panGestureRecognizer.setTranslation(CGPointZero, inView: self)
+            let handleGestureState: () -> Void = {
+                let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
+                let translatedPoint = panGestureRecognizer.translationInView(self)
+                self.center = CGPointMake(self.center.x + translatedPoint.x, self.center.y + translatedPoint.y)
+                panGestureRecognizer.setTranslation(CGPointZero, inView: self)
+            }
+            
+            if delayForPanGestureAutomaticHandler > 0.0 {
+                UIView.animateWithDuration(delayForPanGestureAutomaticHandler, animations: { () -> Void in
+                    handleGestureState()
+                })
+            }
+            else {
+                handleGestureState()
+            }
             break
         case .Changed:
-            let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
-            let translatedPoint = panGestureRecognizer.translationInView(self)
-            center = CGPointMake(center.x + translatedPoint.x, center.y + translatedPoint.y)
-            panGestureRecognizer.setTranslation(CGPointZero, inView: self)
+            let handleGestureState: () -> Void = {
+                let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
+                let translatedPoint = panGestureRecognizer.translationInView(self)
+                self.center = CGPointMake(self.center.x + translatedPoint.x, self.center.y + translatedPoint.y)
+                panGestureRecognizer.setTranslation(CGPointZero, inView: self)
+            }
+            
+            if delayForPanGestureAutomaticHandler > 0.0 {
+                UIView.animateWithDuration(delayForPanGestureAutomaticHandler, animations: { () -> Void in
+                    handleGestureState()
+                })
+            }
+            else {
+                handleGestureState()
+            }
             break
         case .Ended:
+            let handleGestureState: () -> Void = {
+                let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
+                let translatedPoint = panGestureRecognizer.translationInView(self)
+                self.center = CGPointMake(self.center.x + translatedPoint.x, self.center.y + translatedPoint.y)
+                panGestureRecognizer.setTranslation(CGPointZero, inView: self)
+            }
+            
+            if delayForPanGestureAutomaticHandler > 0.0 {
+                UIView.animateWithDuration(delayForPanGestureAutomaticHandler, animations: { () -> Void in
+                    handleGestureState()
+                })
+            }
+            else {
+                handleGestureState()
+            }
             break
         case .Cancelled:
             break
