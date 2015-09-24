@@ -281,7 +281,7 @@ VTDispatcher.sharedDispatcher().dispatchOnQueue(queueWithHighPriority, afterTime
 }
 
 /*
- * Also, if you want to use queue with background priority, there's a ready method for this.
+ * Also, if you want to use queue with background priority, there's already a method for this.
  */
 
 VTDispatcher.sharedDispatcher().dispatchOnBackgroundQueueAfterTimeInterval(1.0) { () -> Void in
@@ -297,7 +297,7 @@ VTDispatcher.sharedDispatcher().dispatchOnMainQueueAfterTimeInterval(1.0) { () -
 }
 ```
 
-`VTDispatcher` class is designed with method chaining pattern, so you can write a code like this:
+`VTDispatcher` class is designed with method chaining pattern, so you can write code like this:
 
 ```swift
 VTDispatcher.sharedDispatcher().dispatchOnMainQueueAfterTimeInterval(1.0) { () -> Void in
