@@ -218,6 +218,30 @@ If you want to use your custom class for navigation bar or toolbar inside of nav
 
 The first parameter is type of navigation controller. The second parameter is a type of navigation bar. Third parameter is a type of toolbar. And, finally, the last parameter is a configuration block for navigation controller.
 
+Sometimes you might need to display some view on the entire screen above all other views. Usually, this task could be solved by adding view to key `UIWindow` instance. `Visuality` has flexible solution for this case:
+
+```swift
+VTNavigationManager.sharedNavigationManager().addViewToKeyWindowAnimated(fullScreenView, withDuration: 2.0, prepareForAnimationBlock: { (view, window) -> Void in
+    view.frame = window.bounds
+    view.alpha = 0.0
+}, animationBlock: { (view, window) -> Void in
+    view.alpha = 1.0
+}) { (finished) -> Void in
+}
+```
+
+This method allows you to display view on the screen animatedly. First parameter is a view which should be added to `UIWindow` instance as a subview. Second parameter specifies duration of animation for view's appearance. Third parameter is a block which is called before appearance animation for purpose of some initial settings. Fourth parameter is an animation block. And, finally, the last parameter is a completion block.
+
+If you don't need to program animation for view's appearance, you can use another version of this method:
+
+```swift
+VTNavigationManager.sharedNavigationManager().addViewToKeyWindow(fullScreenView) { (view, window) -> Void in
+    view.backgroundColor = .whiteColor()
+}
+```
+
+This method takes only two parameters: the view itself and configuration block which is called when view is added to the window.
+
 All navigation methods of `VTNavigationManager` returns manager's object, so you can write code with chain:
 
 ```swift
@@ -229,6 +253,13 @@ VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) 
     let someViewController = SomeViewController()
     navigationController.viewControllers = [someViewController]
     navigationController.navigationBarHidden = true
+}.addViewToKeyWindowAnimated(fullScreenView, withDuration: 2.0, prepareForAnimationBlock: { (view, window) -> Void in
+    view.frame = window.bounds
+    view.alpha = 0.0
+}, animationBlock: { (view, window) -> Void in
+    view.alpha = 1.0
+}) { (finished) -> Void in
+}.addViewToKeyWindow(otherFullScreenView) { (view, window) -> Void in
 }
 ```
 
