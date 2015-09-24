@@ -40,9 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Protocol methods
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Create window and display main screen
+        // Create full screen view
         
         let fullScreenView = FullScreenView.VT_viewFromNibWithClassNameLocatedInMainBundle()
+        
+        
+        // Create window and display main screen
         
         VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
             // Initialize window
@@ -67,7 +70,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }, animationBlock: { (view, window) -> Void in
             view.alpha = 1.0
         }) { (finished) -> Void in
-        }.addViewToKeyWindow(otherFullScreenView) { (view, window) -> Void in
         }
         
         
