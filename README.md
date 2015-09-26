@@ -3,7 +3,7 @@
 </p>
 
 # Visuality
-`Visuality` is a library for iOS which includes set of extensions that simplify work with UI. Written in Swift.
+`Visuality` is a library for iOS which includes set of classes and extensions that simplify work with UI. Written in Swift.
 
 ##How To Get Started
 
@@ -277,7 +277,7 @@ Usage of C methods to dispatch queues in Swift is not so easy and obvious like i
 let queueWithHighPriority = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
 
 VTDispatcher.sharedDispatcher().dispatchOnQueue(queueWithHighPriority, afterTimeInterval: 1.0) { () -> Void in
-    // Do something here...
+    // Do something...
 }
 
 /*
@@ -285,7 +285,7 @@ VTDispatcher.sharedDispatcher().dispatchOnQueue(queueWithHighPriority, afterTime
  */
 
 VTDispatcher.sharedDispatcher().dispatchOnBackgroundQueueAfterTimeInterval(1.0) { () -> Void in
-    // Do something here...
+    // Do something...
 }
 
 /*
@@ -293,7 +293,7 @@ VTDispatcher.sharedDispatcher().dispatchOnBackgroundQueueAfterTimeInterval(1.0) 
  */
 
 VTDispatcher.sharedDispatcher().dispatchOnMainQueueAfterTimeInterval(1.0) { () -> Void in
-    // Do something here...
+    // Do something...
 }
 ```
 
