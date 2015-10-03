@@ -27,8 +27,8 @@
 		696633721BB419A900CBCFB4 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696633671BB419A900CBCFB4 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
 		696633731BB419A900CBCFB4 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696633681BB419A900CBCFB4 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
 		696633741BB419A900CBCFB4 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966336A1BB419A900CBCFB4 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
-		696633751BB419A900CBCFB4 /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966336C1BB419A900CBCFB4 /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
 		696633771BB419BD00CBCFB4 /* VTDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696633761BB419BD00CBCFB4 /* VTDispatcher.swift */; settings = {ASSET_TAGS = (); }; };
+		697ECEC81BB9A48100ABAAAC /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697ECEC71BB9A48100ABAAAC /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +75,8 @@
 		696633671BB419A900CBCFB4 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
 		696633681BB419A900CBCFB4 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
 		6966336A1BB419A900CBCFB4 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
-		6966336C1BB419A900CBCFB4 /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
 		696633761BB419BD00CBCFB4 /* VTDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTDispatcher.swift; sourceTree = "<group>"; };
+		697ECEC71BB9A48100ABAAAC /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,7 +320,7 @@
 		6966336B1BB419A900CBCFB4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				6966336C1BB419A900CBCFB4 /* VTNavigationManager.swift */,
+				697ECEC61BB9A48100ABAAAC /* NavigationManager */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -337,6 +337,14 @@
 			);
 			name = Visuality;
 			path = ../../../../Visuality;
+			sourceTree = "<group>";
+		};
+		697ECEC61BB9A48100ABAAAC /* NavigationManager */ = {
+			isa = PBXGroup;
+			children = (
+				697ECEC71BB9A48100ABAAAC /* VTNavigationManager.swift */,
+			);
+			path = NavigationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697ECEC81BB9A48100ABAAAC /* VTNavigationManager.swift in Sources */,
 				696633731BB419A900CBCFB4 /* UIViewExtensionInitialization.swift in Sources */,
 				696633741BB419A900CBCFB4 /* UIViewExtensionLayout.swift in Sources */,
 				696633701BB419A900CBCFB4 /* VTGestureView.swift in Sources */,
@@ -480,7 +489,6 @@
 				6966336E1BB419A900CBCFB4 /* VTGestureState.swift in Sources */,
 				6966336D1BB419A900CBCFB4 /* NSObjectExtensionNamespaces.swift in Sources */,
 				694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */,
-				696633751BB419A900CBCFB4 /* VTNavigationManager.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
 				696633771BB419BD00CBCFB4 /* VTDispatcher.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,

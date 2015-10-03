@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // Update navigation controller
             
-            navigationController.navigationBarHidden = true
+            navigationController.navigationBarHidden = false
             navigationController.viewControllers = [mainViewController]
         }.addViewToKeyWindowAnimated(fullScreenView, withDuration: 2.0, prepareForAnimationBlock: { (view, window) -> Void in
             view.frame = window.bounds

@@ -1,6 +1,6 @@
 //
 //  VTGestureState.swift
-//  VisualityDemo
+//  Visuality
 //
 //  Created by Igor Matyushkin on 23.09.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.

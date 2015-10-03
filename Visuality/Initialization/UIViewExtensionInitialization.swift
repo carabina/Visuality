@@ -1,6 +1,6 @@
 //
 //  UIViewExtensionInitialization.swift
-//  VisualityDemo
+//  Visuality
 //
 //  Created by Igor Matyushkin on 21.09.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
