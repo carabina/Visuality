@@ -178,7 +178,6 @@ What's the difference? First of all, `VTNavigationManager` adds more flexibility
 ```swift
 VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self, andMakeItKeyAndVisible: true) { (window) -> Void in
     window.backgroundColor = .whiteColor()
-    window.makeKeyAndVisible()
     self.window = window
 }
 ```
@@ -248,7 +247,6 @@ All navigation methods of `VTNavigationManager` returns manager's object, so you
 ```swift
 VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self, andMakeItKeyAndVisible: true) { (window) -> Void in
     window.backgroundColor = .whiteColor()
-    window.makeKeyAndVisible()
     self.window = window
 }.switchToNavigationControllerOfType(UINavigationController.self) { (navigationController) -> Void in
     let someViewController = SomeViewController()
