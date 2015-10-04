@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		691A1C3A1BC13DA600D0A832 /* VTDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C261BC13DA600D0A832 /* VTDispatcher.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C421BC13DA600D0A832 /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C361BC13DA600D0A832 /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C431BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C381BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C4A1BC13DCD00D0A832 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C461BC13DCD00D0A832 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C4B1BC13DCD00D0A832 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C471BC13DCD00D0A832 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C4C1BC13DCD00D0A832 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C491BC13DCD00D0A832 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C4E1BC13DF500D0A832 /* VTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C4D1BC13DF500D0A832 /* VTTimer.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C501BC13E4E00D0A832 /* VTTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C4F1BC13E4E00D0A832 /* VTTimerBlock.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C521BC1400F00D0A832 /* VTTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C511BC1400F00D0A832 /* VTTimerExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C5B1BC142CB00D0A832 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C551BC142CB00D0A832 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C5C1BC142CB00D0A832 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C561BC142CB00D0A832 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C5D1BC142CB00D0A832 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C591BC142CB00D0A832 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C5E1BC142CB00D0A832 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C5A1BC142CB00D0A832 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60241BB0A056007D2837 /* AppDelegate.swift */; };
 		694A602C1BB0A056007D2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694A602B1BB0A056007D2837 /* Assets.xcassets */; };
 		694A602F1BB0A056007D2837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694A602D1BB0A056007D2837 /* LaunchScreen.storyboard */; };
@@ -32,6 +19,20 @@
 		694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */; settings = {ASSET_TAGS = (); }; };
 		696633561BB4182F00CBCFB4 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696633551BB4182F00CBCFB4 /* FullScreenView.swift */; settings = {ASSET_TAGS = (); }; };
 		696633581BB4183B00CBCFB4 /* FullScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696633571BB4183B00CBCFB4 /* FullScreenView.xib */; settings = {ASSET_TAGS = (); }; };
+		69A150AB1BC1755800C46482 /* VTDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1508F1BC1755800C46482 /* VTDispatcher.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150AC1BC1755800C46482 /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150921BC1755800C46482 /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150AD1BC1755800C46482 /* NSObjectExtensionNamespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150941BC1755800C46482 /* NSObjectExtensionNamespaces.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150AE1BC1755800C46482 /* VTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150961BC1755800C46482 /* VTTimer.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150AF1BC1755800C46482 /* VTTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150971BC1755800C46482 /* VTTimerBlock.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B01BC1755800C46482 /* VTTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150981BC1755800C46482 /* VTTimerExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B11BC1755800C46482 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1509C1BC1755800C46482 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B21BC1755800C46482 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1509D1BC1755800C46482 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B31BC1755800C46482 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A01BC1755800C46482 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B41BC1755800C46482 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A11BC1755800C46482 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B51BC1755800C46482 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A31BC1755800C46482 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B61BC1755800C46482 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A41BC1755800C46482 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B71BC1755800C46482 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A61BC1755800C46482 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		69A150B81BC1755800C46482 /* VTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150AA1BC1755800C46482 /* VTTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,19 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		691A1C261BC13DA600D0A832 /* VTDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTDispatcher.swift; sourceTree = "<group>"; };
-		691A1C361BC13DA600D0A832 /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
-		691A1C381BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionNamespaces.swift; sourceTree = "<group>"; };
-		691A1C461BC13DCD00D0A832 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
-		691A1C471BC13DCD00D0A832 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
-		691A1C491BC13DCD00D0A832 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
-		691A1C4D1BC13DF500D0A832 /* VTTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimer.swift; sourceTree = "<group>"; };
-		691A1C4F1BC13E4E00D0A832 /* VTTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerBlock.swift; sourceTree = "<group>"; };
-		691A1C511BC1400F00D0A832 /* VTTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerExtensionInitialization.swift; sourceTree = "<group>"; };
-		691A1C551BC142CB00D0A832 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
-		691A1C561BC142CB00D0A832 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
-		691A1C591BC142CB00D0A832 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
-		691A1C5A1BC142CB00D0A832 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
 		694A60211BB0A056007D2837 /* VisualityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694A60241BB0A056007D2837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		694A602B1BB0A056007D2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +71,20 @@
 		694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionListOfColors.swift; sourceTree = "<group>"; };
 		696633551BB4182F00CBCFB4 /* FullScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
 		696633571BB4183B00CBCFB4 /* FullScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullScreenView.xib; sourceTree = "<group>"; };
+		69A1508F1BC1755800C46482 /* VTDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTDispatcher.swift; sourceTree = "<group>"; };
+		69A150921BC1755800C46482 /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
+		69A150941BC1755800C46482 /* NSObjectExtensionNamespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionNamespaces.swift; sourceTree = "<group>"; };
+		69A150961BC1755800C46482 /* VTTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimer.swift; sourceTree = "<group>"; };
+		69A150971BC1755800C46482 /* VTTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerBlock.swift; sourceTree = "<group>"; };
+		69A150981BC1755800C46482 /* VTTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerExtensionInitialization.swift; sourceTree = "<group>"; };
+		69A1509C1BC1755800C46482 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
+		69A1509D1BC1755800C46482 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
+		69A150A01BC1755800C46482 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
+		69A150A11BC1755800C46482 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
+		69A150A31BC1755800C46482 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
+		69A150A41BC1755800C46482 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
+		69A150A61BC1755800C46482 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
+		69A150AA1BC1755800C46482 /* VTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,110 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		691A1C251BC13DA600D0A832 /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C261BC13DA600D0A832 /* VTDispatcher.swift */,
-			);
-			path = Dispatcher;
-			sourceTree = "<group>";
-		};
-		691A1C341BC13DA600D0A832 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C351BC13DA600D0A832 /* NavigationManager */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		691A1C351BC13DA600D0A832 /* NavigationManager */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C361BC13DA600D0A832 /* VTNavigationManager.swift */,
-			);
-			path = NavigationManager;
-			sourceTree = "<group>";
-		};
-		691A1C371BC13DA600D0A832 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C381BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		691A1C391BC13DA600D0A832 /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C4D1BC13DF500D0A832 /* VTTimer.swift */,
-				691A1C511BC1400F00D0A832 /* VTTimerExtensionInitialization.swift */,
-				691A1C4F1BC13E4E00D0A832 /* VTTimerBlock.swift */,
-			);
-			path = Timer;
-			sourceTree = "<group>";
-		};
-		691A1C441BC13DCD00D0A832 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C531BC142CB00D0A832 /* Gestures */,
-				691A1C451BC13DCD00D0A832 /* Initialization */,
-				691A1C481BC13DCD00D0A832 /* Layout */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		691A1C451BC13DCD00D0A832 /* Initialization */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C461BC13DCD00D0A832 /* NSBundleExtensionContent.swift */,
-				691A1C471BC13DCD00D0A832 /* UIViewExtensionInitialization.swift */,
-			);
-			path = Initialization;
-			sourceTree = "<group>";
-		};
-		691A1C481BC13DCD00D0A832 /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C491BC13DCD00D0A832 /* UIViewExtensionLayout.swift */,
-			);
-			path = Layout;
-			sourceTree = "<group>";
-		};
-		691A1C531BC142CB00D0A832 /* Gestures */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C541BC142CB00D0A832 /* Types */,
-				691A1C571BC142CB00D0A832 /* Views */,
-			);
-			path = Gestures;
-			sourceTree = "<group>";
-		};
-		691A1C541BC142CB00D0A832 /* Types */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C551BC142CB00D0A832 /* VTGestureState.swift */,
-				691A1C561BC142CB00D0A832 /* VTGestureType.swift */,
-			);
-			path = Types;
-			sourceTree = "<group>";
-		};
-		691A1C571BC142CB00D0A832 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C581BC142CB00D0A832 /* GestureView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		691A1C581BC142CB00D0A832 /* GestureView */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C591BC142CB00D0A832 /* VTGestureView.swift */,
-				691A1C5A1BC142CB00D0A832 /* VTGestureViewDelegate.swift */,
-			);
-			path = GestureView;
-			sourceTree = "<group>";
-		};
 		694A60181BB0A056007D2837 = {
 			isa = PBXGroup;
 			children = (
@@ -296,7 +194,7 @@
 		694A60591BB0A0BD007D2837 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				6978D4C31BB4061C0083BF74 /* Visuality */,
+				69A1508D1BC1755800C46482 /* Visuality */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -343,17 +241,146 @@
 			path = FullScreenView;
 			sourceTree = "<group>";
 		};
-		6978D4C31BB4061C0083BF74 /* Visuality */ = {
+		69A1508D1BC1755800C46482 /* Visuality */ = {
 			isa = PBXGroup;
 			children = (
-				691A1C441BC13DCD00D0A832 /* Views */,
-				691A1C251BC13DA600D0A832 /* Dispatcher */,
-				691A1C341BC13DA600D0A832 /* Navigation */,
-				691A1C371BC13DA600D0A832 /* Objects */,
-				691A1C391BC13DA600D0A832 /* Timer */,
+				69A1508E1BC1755800C46482 /* Dispatcher */,
+				69A150901BC1755800C46482 /* Navigation */,
+				69A150931BC1755800C46482 /* Objects */,
+				69A150951BC1755800C46482 /* Timer */,
+				69A150991BC1755800C46482 /* Views */,
 			);
 			name = Visuality;
 			path = ../../../../Visuality;
+			sourceTree = "<group>";
+		};
+		69A1508E1BC1755800C46482 /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				69A1508F1BC1755800C46482 /* VTDispatcher.swift */,
+			);
+			path = Dispatcher;
+			sourceTree = "<group>";
+		};
+		69A150901BC1755800C46482 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				69A150911BC1755800C46482 /* NavigationManager */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		69A150911BC1755800C46482 /* NavigationManager */ = {
+			isa = PBXGroup;
+			children = (
+				69A150921BC1755800C46482 /* VTNavigationManager.swift */,
+			);
+			path = NavigationManager;
+			sourceTree = "<group>";
+		};
+		69A150931BC1755800C46482 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				69A150941BC1755800C46482 /* NSObjectExtensionNamespaces.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		69A150951BC1755800C46482 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				69A150961BC1755800C46482 /* VTTimer.swift */,
+				69A150971BC1755800C46482 /* VTTimerBlock.swift */,
+				69A150981BC1755800C46482 /* VTTimerExtensionInitialization.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		69A150991BC1755800C46482 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69A1509A1BC1755800C46482 /* Gestures */,
+				69A150A21BC1755800C46482 /* Initialization */,
+				69A150A51BC1755800C46482 /* Layout */,
+				69A150A71BC1755800C46482 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69A1509A1BC1755800C46482 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				69A1509B1BC1755800C46482 /* Types */,
+				69A1509E1BC1755800C46482 /* Views */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		69A1509B1BC1755800C46482 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				69A1509C1BC1755800C46482 /* VTGestureState.swift */,
+				69A1509D1BC1755800C46482 /* VTGestureType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		69A1509E1BC1755800C46482 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69A1509F1BC1755800C46482 /* GestureView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69A1509F1BC1755800C46482 /* GestureView */ = {
+			isa = PBXGroup;
+			children = (
+				69A150A01BC1755800C46482 /* VTGestureView.swift */,
+				69A150A11BC1755800C46482 /* VTGestureViewDelegate.swift */,
+			);
+			path = GestureView;
+			sourceTree = "<group>";
+		};
+		69A150A21BC1755800C46482 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				69A150A31BC1755800C46482 /* NSBundleExtensionContent.swift */,
+				69A150A41BC1755800C46482 /* UIViewExtensionInitialization.swift */,
+			);
+			path = Initialization;
+			sourceTree = "<group>";
+		};
+		69A150A51BC1755800C46482 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				69A150A61BC1755800C46482 /* UIViewExtensionLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		69A150A71BC1755800C46482 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				69A150A81BC1755800C46482 /* Cells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		69A150A81BC1755800C46482 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69A150A91BC1755800C46482 /* TableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		69A150A91BC1755800C46482 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				69A150AA1BC1755800C46482 /* VTTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,24 +515,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				691A1C4C1BC13DCD00D0A832 /* UIViewExtensionLayout.swift in Sources */,
 				694A60731BB0B230007D2837 /* CircleView.swift in Sources */,
-				691A1C521BC1400F00D0A832 /* VTTimerExtensionInitialization.swift in Sources */,
-				691A1C4E1BC13DF500D0A832 /* VTTimer.swift in Sources */,
+				69A150AF1BC1755800C46482 /* VTTimerBlock.swift in Sources */,
 				694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */,
-				691A1C4A1BC13DCD00D0A832 /* NSBundleExtensionContent.swift in Sources */,
-				691A1C501BC13E4E00D0A832 /* VTTimerBlock.swift in Sources */,
-				691A1C3A1BC13DA600D0A832 /* VTDispatcher.swift in Sources */,
-				691A1C421BC13DA600D0A832 /* VTNavigationManager.swift in Sources */,
-				691A1C5E1BC142CB00D0A832 /* VTGestureViewDelegate.swift in Sources */,
-				691A1C5C1BC142CB00D0A832 /* VTGestureType.swift in Sources */,
-				691A1C4B1BC13DCD00D0A832 /* UIViewExtensionInitialization.swift in Sources */,
+				69A150AC1BC1755800C46482 /* VTNavigationManager.swift in Sources */,
+				69A150AD1BC1755800C46482 /* NSObjectExtensionNamespaces.swift in Sources */,
+				69A150B11BC1755800C46482 /* VTGestureState.swift in Sources */,
+				69A150AB1BC1755800C46482 /* VTDispatcher.swift in Sources */,
+				69A150AE1BC1755800C46482 /* VTTimer.swift in Sources */,
+				69A150B61BC1755800C46482 /* UIViewExtensionInitialization.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
+				69A150B41BC1755800C46482 /* VTGestureViewDelegate.swift in Sources */,
+				69A150B01BC1755800C46482 /* VTTimerExtensionInitialization.swift in Sources */,
+				69A150B31BC1755800C46482 /* VTGestureView.swift in Sources */,
+				69A150B51BC1755800C46482 /* NSBundleExtensionContent.swift in Sources */,
+				69A150B81BC1755800C46482 /* VTTableViewCell.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,
+				69A150B21BC1755800C46482 /* VTGestureType.swift in Sources */,
+				69A150B71BC1755800C46482 /* UIViewExtensionLayout.swift in Sources */,
 				696633561BB4182F00CBCFB4 /* FullScreenView.swift in Sources */,
-				691A1C5D1BC142CB00D0A832 /* VTGestureView.swift in Sources */,
-				691A1C431BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift in Sources */,
-				691A1C5B1BC142CB00D0A832 /* VTGestureState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
