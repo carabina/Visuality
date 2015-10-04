@@ -34,6 +34,8 @@ class MainViewController: UIViewController {
     
     private var circleView: CircleView!
     
+    private var counter: Int!
+    
     
     // MARK: Public methods
     
@@ -60,6 +62,19 @@ class MainViewController: UIViewController {
         circleView.setDelayForGestureAutomaticHandler(0.0, forGestureType: .Rotation)
         
         circleView.VT_fillView(containerForCircleView)
+        
+        
+        // Initialize counter
+        
+        counter = 0
+        
+        
+        // Start timer
+        
+        VTTimer.every(1.0) { () -> Void in
+            self.counter!++
+            self.navigationItem.title = String(format: "Timer: %d", arguments: [self.counter])
+        }
     }
     
     override func didReceiveMemoryWarning() {
