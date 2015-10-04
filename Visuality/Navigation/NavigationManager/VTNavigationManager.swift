@@ -42,8 +42,8 @@ public class VTNavigationManager: NSObject {
     
     // MARK: Public methods
     
-    public func createWindowOfType(windowType: UIWindow.Type, withConfigurationBlock configurationBlock: ((window: UIWindow) -> Void)?) -> VTNavigationManager {
-        // Retrieve frame for window
+    public func createWindowOfType(windowType: UIWindow.Type, andMakeItKeyAndVisible makeKeyAndVisible: Bool, withConfigurationBlock configurationBlock: ((window: UIWindow) -> Void)?) -> VTNavigationManager {
+        // Obtain frame for window
         
         let frameForWindow = UIScreen.mainScreen().bounds
         
@@ -51,6 +51,13 @@ public class VTNavigationManager: NSObject {
         // Create window
         
         let window = windowType.init(frame: frameForWindow)
+        
+        
+        // Make window key and visible if needed
+        
+        if makeKeyAndVisible {
+            window.makeKeyAndVisible()
+        }
         
         
         // Configure window
@@ -64,7 +71,7 @@ public class VTNavigationManager: NSObject {
     }
     
     public func switchToNavigationControllerOfType(navigationControllerType: UINavigationController.Type, withNavigationBarOfType navigationBarType: UINavigationBar.Type, toolbarOfType toolbarType: UIToolbar.Type, andConfigurationBlock configurationBlock: ((navigationController: UINavigationController) -> Void)?) -> VTNavigationManager {
-        // Retrieve key window
+        // Obtain key window
         
         let keyWindow = UIApplication.sharedApplication().keyWindow
         
@@ -90,12 +97,12 @@ public class VTNavigationManager: NSObject {
     }
     
     public func switchToNavigationControllerOfType(navigationControllerType: UINavigationController.Type, withConfigurationBlock configurationBlock: ((navigationController: UINavigationController) -> Void)?) -> VTNavigationManager {
-        // Retrieve navigation bar type
+        // Obtain navigation bar type
         
         let navigationBarType = UINavigationBar.self
         
         
-        // Retrieve toolbar type
+        // Obtain toolbar type
         
         let toolbarType = UIToolbar.self
         
@@ -113,7 +120,7 @@ public class VTNavigationManager: NSObject {
     }
     
     public func addViewToKeyWindow(view: UIView, withConfigurationBlock configurationBlock: ((view: UIView, window: UIWindow?) -> Void)?) -> VTNavigationManager {
-        // Retrieve key window
+        // Obtain key window
         
         let keyWindow = UIApplication.sharedApplication().keyWindow
         
@@ -138,7 +145,7 @@ public class VTNavigationManager: NSObject {
     }
     
     public func addViewToKeyWindowAnimated(view: UIView, withDuration duration: NSTimeInterval, prepareForAnimationBlock: ((view: UIView, window: UIWindow) -> Void)?, animationBlock: ((view: UIView, window: UIWindow) -> Void)?, andCompletion completion: ((finished: Bool) -> Void)?) -> VTNavigationManager {
-        // Retrieve key window
+        // Obtain key window
         
         let keyWindow = UIApplication.sharedApplication().keyWindow
         

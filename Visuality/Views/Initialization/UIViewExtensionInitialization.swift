@@ -24,7 +24,7 @@ public extension UIView {
     - returns: View from nib with specified name which is located in specified bundle.
     */
     public class func VT_viewFromNibWithName(nibName: String, locatedInBundle bundle: NSBundle?) -> UIView {
-        // Retrieve bundle which is appropriate for usage
+        // Obtain bundle which is appropriate for usage
         
         let bundleToUse = bundle == nil ? NSBundle.mainBundle() : bundle as NSBundle!
         
@@ -34,7 +34,7 @@ public extension UIView {
         let nibExists = bundleToUse.VT_containsNibWithName(nibName)
         
         
-        // Retrieve result view
+        // Obtain result view
         
         var resultView: UIView? = nil
         
@@ -63,12 +63,12 @@ public extension UIView {
     - returns: View from nib with specified name which is located in bundle with specified identifier.
     */
     public class func VT_viewFromNibWithName(nibName: String, locatedInBundleWithIdentifier bundleIdentifier: String?) -> UIView {
-        // Retrieve bundle which is appropriate for usage
+        // Obtain bundle which is appropriate for usage
         
         let bundleToUse = bundleIdentifier == nil ? NSBundle.mainBundle() : NSBundle(identifier: bundleIdentifier!)
         
         
-        // Retrieve result view
+        // Obtain result view
         
         let resultView = VT_viewFromNibWithName(nibName, locatedInBundle: bundleToUse)
         
@@ -87,12 +87,12 @@ public extension UIView {
     - returns: View from nib with specified name which is located in main bundle.
     */
     public class func VT_viewFromNibLocatedInMainBundleWithNibName(nibName: String) -> UIView {
-        // Retrieve bundle
+        // Obtain bundle
         
         let bundleToUse = NSBundle.mainBundle()
         
         
-        // Retrieve result view
+        // Obtain result view
         
         let resultView = VT_viewFromNibWithName(nibName, locatedInBundle: bundleToUse)
         
@@ -111,12 +111,12 @@ public extension UIView {
     - returns: View from nib which name is equal to view's class name and which is located in specified bundle.
     */
     public class func VT_viewFromNibWithClassNameLocatedInBundle(bundle: NSBundle?) -> UIView {
-        // Retrieve nib name
+        // Obtain nib name
         
         let nibName = VT_classNameWithoutNamespace()
         
         
-        // Retrieve result view
+        // Obtain result view
         
         let resultView = VT_viewFromNibWithName(nibName, locatedInBundle: bundle)
         
@@ -135,17 +135,17 @@ public extension UIView {
     - returns: View from nib which name is equal to view's class name and which is located in bundle with specified identifier.
     */
     public class func VT_viewFromNibWithClassNameLocatedInBundleWithIdentifier(bundleIdentifier: String?) -> UIView {
-        // Retrieve nib name
+        // Obtain nib name
         
         let nibName = VT_classNameWithoutNamespace()
         
         
-        // Retrieve bundle which is appropriate for usage
+        // Obtain bundle which is appropriate for usage
         
         let bundleToUse = bundleIdentifier == nil ? NSBundle.mainBundle() : NSBundle(identifier: bundleIdentifier!)
         
         
-        // Retrieve result view
+        // Obtain result view
         
         let resultView = VT_viewFromNibWithName(nibName, locatedInBundle: bundleToUse)
         
@@ -161,17 +161,17 @@ public extension UIView {
     - returns: View from nib which name is equal to view's class name and which is located in main bundle.
     */
     public class func VT_viewFromNibWithClassNameLocatedInMainBundle() -> UIView {
-        // Retrieve nib name
+        // Obtain nib name
         
         let nibName = VT_classNameWithoutNamespace()
         
         
-        // Retrieve bundle
+        // Obtain bundle
         
         let bundleToUse = NSBundle.mainBundle()
         
         
-        // Retrieve result view
+        // Obtain result view
         
         let resultView = VT_viewFromNibWithName(nibName, locatedInBundle: bundleToUse)
         

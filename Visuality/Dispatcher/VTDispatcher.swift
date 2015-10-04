@@ -78,7 +78,7 @@ public class VTDispatcher: NSObject {
     }
     
     public func dispatchOnBackgroundQueueWithBlock(block: () -> Void) -> VTDispatcher {
-        // Retrieve queue
+        // Obtain queue
         
         let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
         
@@ -94,7 +94,7 @@ public class VTDispatcher: NSObject {
     }
     
     public func dispatchOnBackgroundQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> VTDispatcher {
-        // Retrieve queue
+        // Obtain queue
         
         let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
         
@@ -112,7 +112,7 @@ public class VTDispatcher: NSObject {
     }
     
     public func dispatchOnMainQueueWithBlock(block: () -> Void) -> VTDispatcher {
-        // Retrieve queue
+        // Obtain queue
         
         let queue = dispatch_get_main_queue()
         
@@ -128,7 +128,7 @@ public class VTDispatcher: NSObject {
     }
     
     public func dispatchOnMainQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> VTDispatcher {
-        // Retrieve queue
+        // Obtain queue
         
         let queue = dispatch_get_main_queue()
         

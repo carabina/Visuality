@@ -47,22 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Create window and display main screen
         
-        VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
-            // Initialize window
-            
+        VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self, andMakeItKeyAndVisible: true) { (window) -> Void in
             window.backgroundColor = .whiteColor()
-            window.makeKeyAndVisible()
-            
             self.window = window
         }.switchToNavigationControllerOfType(UINavigationController.self) { (navigationController) -> Void in
-            // Create main view controller
-            
             let mainViewController = MainViewController()
-            
-            
-            // Update navigation controller
-            
-            navigationController.navigationBarHidden = false
             navigationController.viewControllers = [mainViewController]
         }.addViewToKeyWindowAnimated(fullScreenView, withDuration: 2.0, prepareForAnimationBlock: { (view, window) -> Void in
             view.frame = window.bounds

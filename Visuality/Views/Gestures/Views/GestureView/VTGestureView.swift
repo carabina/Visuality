@@ -389,7 +389,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func initializeGestureRecognizers() {
-        // Retrieve selector for gesture recognizers
+        // Obtain selector for gesture recognizers
         
         let selectorForGestureRecognizers = Selector("viewDidRetrieveGestureWithRecognizer:")
         
@@ -474,7 +474,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     internal func viewDidRetrieveGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture type
+        // Obtain gesture type
         
         let gestureType = VTGestureType.gestureTypeFromGestureRecognizer(gestureRecognizer)
         
@@ -520,12 +520,12 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
         // Share event
         
         if gestureDelegate != nil {
-            // Retrieve gesture state
+            // Obtain gesture state
             
             let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
             
             
-            // Retrieve touched points
+            // Obtain touched points
             
             let numberOfTouchedPoints = gestureRecognizer.numberOfTouches()
             var touchedPoints: [CGPoint] = []
@@ -543,7 +543,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func handleTapGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture state
+        // Obtain gesture state
         
         let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
         
@@ -565,7 +565,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func handleLongPressGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture state
+        // Obtain gesture state
         
         let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
         
@@ -587,7 +587,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func handlePanGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture state
+        // Obtain gesture state
         
         let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
         
@@ -654,7 +654,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func handlePinchGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture state
+        // Obtain gesture state
         
         let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
         
@@ -684,7 +684,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func handleRotationGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture state
+        // Obtain gesture state
         
         let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
         
@@ -706,7 +706,7 @@ public class VTGestureView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func handleSwipeGestureWithRecognizer(gestureRecognizer: UIGestureRecognizer) {
-        // Retrieve gesture state
+        // Obtain gesture state
         
         let gestureState = VTGestureState.gestureStateFromGestureRecognizer(gestureRecognizer)
         

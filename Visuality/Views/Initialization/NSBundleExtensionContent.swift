@@ -28,7 +28,7 @@ public extension NSBundle {
     - returns: True if nib exists. Otherwise, returns false.
     */
     public func VT_containsNibWithName(nibName: String) -> Bool {
-        // Retrieve path for nib
+        // Obtain path for nib
         
         let pathForNib = pathForResource(nibName, ofType: "nib")
         
@@ -68,7 +68,7 @@ public extension NSBundle {
         }
         
         
-        // Retrieve result view
+        // Obtain result view
         
         let topLevelObjectsFromNib = loadNibNamed(nibName, owner: nil, options: nil)
         
