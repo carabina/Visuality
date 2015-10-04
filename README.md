@@ -263,9 +263,7 @@ VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) 
 }
 ```
 
-### Other classes and extensions
-
-#### Dispatch
+### Dispatch
 
 Usage of C methods to dispatch queues in Swift is not so easy and obvious like it was in Objective-C. That's why `VTDispatcher` class was created. It has methods that simplify some of the work with queues. For example:
 
