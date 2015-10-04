@@ -8,4 +8,4 @@
 
 import Foundation
 
-public typealias VTTimerBlock = () -> Void
+public typealias VTTimerBlock = (timer: VTTimer, tickCount: Int, timeIntervalSinceStart: NSTimeInterval) -> Void

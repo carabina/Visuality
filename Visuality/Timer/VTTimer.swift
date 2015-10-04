@@ -18,6 +18,15 @@ public class VTTimer: NSObject {
     
     // MARK: Initializers
     
+    public override init() {
+        super.init()
+        
+        
+        // Initialize tick count
+        
+        _tickCount = 0
+    }
+    
     
     // MARK: Deinitializer
     
@@ -43,6 +52,22 @@ public class VTTimer: NSObject {
         }
     }
     
+    private var _tickCount: Int!
+    
+    private var tickCount: Int {
+        get {
+            return _tickCount
+        }
+    }
+    
+    private var _startDate: NSDate?
+    
+    private var startDate: NSDate? {
+        get {
+            return _startDate
+        }
+    }
+    
     
     // MARK: Public methods
     
@@ -55,6 +80,16 @@ public class VTTimer: NSObject {
         // Initialize timer block
         
         _timerBlock = block
+        
+        
+        // Initialize tick count
+        
+        _tickCount = 0
+        
+        
+        // Initialize start date
+        
+        _startDate = NSDate()
         
         
         // Initialize internal timer
@@ -72,13 +107,35 @@ public class VTTimer: NSObject {
         // Remove timer block
         
         _timerBlock = nil
+        
+        
+        // Reset tick count
+        
+        _tickCount = 0
+        
+        
+        // Remove start date
+        
+        _startDate = nil
     }
     
     
     // MARK: Private methods
     
     internal func internalTimerMethod() {
-        timerBlock?()
+        // Update tick count
+        
+        _tickCount!++
+        
+        
+        // Obtain time interval since start
+        
+        let timeIntervalSinceStart = startDate == nil ? 0.0 : NSDate().timeIntervalSinceDate(startDate!)
+        
+        
+        // Start timer block
+        
+        timerBlock?(timer: self, tickCount: tickCount, timeIntervalSinceStart: timeIntervalSinceStart)
     }
     
     

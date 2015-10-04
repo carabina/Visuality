@@ -34,8 +34,6 @@ class MainViewController: UIViewController {
     
     private var circleView: CircleView!
     
-    private var counter: Int!
-    
     
     // MARK: Public methods
     
@@ -64,16 +62,10 @@ class MainViewController: UIViewController {
         circleView.VT_fillView(containerForCircleView)
         
         
-        // Initialize counter
-        
-        counter = 0
-        
-        
         // Start timer
         
-        VTTimer.every(1.0) { () -> Void in
-            self.counter!++
-            self.navigationItem.title = String(format: "Timer: %d", arguments: [self.counter])
+        VTTimer.every(1.0) { (timer, tickCount, timeIntervalSinceStart) -> Void in
+            self.navigationItem.title = String(format: "Timer: %d", arguments: [tickCount])
         }
     }
     
