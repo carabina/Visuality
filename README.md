@@ -157,9 +157,8 @@ And this is how you can handle the same task with `VTNavigationManager`:
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Create window and display view controller
 
-    VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
+    VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self, andMakeItKeyAndVisible: true) { (window) -> Void in
         window.backgroundColor = .whiteColor()
-        window.makeKeyAndVisible()
         self.window = window
     }.switchToNavigationControllerOfType(UINavigationController.self) { (navigationController) -> Void in
         let someViewController = SomeViewController()
@@ -177,7 +176,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 What's the difference? First of all, `VTNavigationManager` adds more flexibility to your code. In example above, there are two methods which were called on `VTNavigationManager`'s shared instance. The first method creates new window:
 
 ```swift
-VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
+VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self, andMakeItKeyAndVisible: true) { (window) -> Void in
     window.backgroundColor = .whiteColor()
     window.makeKeyAndVisible()
     self.window = window
@@ -185,6 +184,8 @@ VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) 
 ```
 
 The first parameter is a type of window. Usually it should be `UIWindow.self`, but you might want to create custom `UIWindow` subclass. In this case, you can simply switch to new `UIWindow` subclass by replacing first parameter with appropriate type.
+
+The second parameter shows whether window should be made key and visible automatically.
 
 The last parameter is a configuration block which allows you to prepare window before displaying it on the screen. You can set background color, make window key and visible, etc. Also, which is important, you need to update `window` property of `AppDelegate` object within this configuration block if you want to use window as key and visible.
 
@@ -245,7 +246,7 @@ This method takes only two parameters: the view itself and configuration block w
 All navigation methods of `VTNavigationManager` returns manager's object, so you can write code with chain:
 
 ```swift
-VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) { (window) -> Void in
+VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self, andMakeItKeyAndVisible: true) { (window) -> Void in
     window.backgroundColor = .whiteColor()
     window.makeKeyAndVisible()
     self.window = window
