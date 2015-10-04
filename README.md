@@ -3,7 +3,7 @@
 </p>
 
 # Visuality
-`Visuality` is a library for iOS which includes set of classes and extensions that simplify work with UI. Written in Swift.
+`Visuality` is a library for iOS which includes set of classes and extensions that simplify work with native SDK in Swift.
 
 ##How To Get Started
 
@@ -11,7 +11,7 @@ Copy content of `Visuality` folder to your project.
 
 ## Requirements
 
-* iOS 7 and later
+* iOS 8 and later
 * Xcode 7 and later
 
 ## Usage
@@ -263,9 +263,7 @@ VTNavigationManager.sharedNavigationManager().createWindowOfType(UIWindow.self) 
 }
 ```
 
-### Other classes and extensions
-
-#### Dispatch
+### Dispatch
 
 Usage of C methods to dispatch queues in Swift is not so easy and obvious like it was in Objective-C. That's why `VTDispatcher` class was created. It has methods that simplify some of the work with queues. For example:
 
