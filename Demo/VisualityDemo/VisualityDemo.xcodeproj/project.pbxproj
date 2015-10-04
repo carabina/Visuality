@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		691A1C3A1BC13DA600D0A832 /* VTDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C261BC13DA600D0A832 /* VTDispatcher.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C3B1BC13DA600D0A832 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C291BC13DA600D0A832 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C3C1BC13DA600D0A832 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C2A1BC13DA600D0A832 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C3D1BC13DA600D0A832 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C2D1BC13DA600D0A832 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
-		691A1C3E1BC13DA600D0A832 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C2E1BC13DA600D0A832 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		691A1C421BC13DA600D0A832 /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C361BC13DA600D0A832 /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
 		691A1C431BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C381BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift */; settings = {ASSET_TAGS = (); }; };
 		691A1C4A1BC13DCD00D0A832 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C461BC13DCD00D0A832 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
@@ -20,6 +16,10 @@
 		691A1C4E1BC13DF500D0A832 /* VTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C4D1BC13DF500D0A832 /* VTTimer.swift */; settings = {ASSET_TAGS = (); }; };
 		691A1C501BC13E4E00D0A832 /* VTTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C4F1BC13E4E00D0A832 /* VTTimerBlock.swift */; settings = {ASSET_TAGS = (); }; };
 		691A1C521BC1400F00D0A832 /* VTTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C511BC1400F00D0A832 /* VTTimerExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
+		691A1C5B1BC142CB00D0A832 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C551BC142CB00D0A832 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
+		691A1C5C1BC142CB00D0A832 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C561BC142CB00D0A832 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
+		691A1C5D1BC142CB00D0A832 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C591BC142CB00D0A832 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
+		691A1C5E1BC142CB00D0A832 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A1C5A1BC142CB00D0A832 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A60241BB0A056007D2837 /* AppDelegate.swift */; };
 		694A602C1BB0A056007D2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694A602B1BB0A056007D2837 /* Assets.xcassets */; };
 		694A602F1BB0A056007D2837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694A602D1BB0A056007D2837 /* LaunchScreen.storyboard */; };
@@ -53,10 +53,6 @@
 
 /* Begin PBXFileReference section */
 		691A1C261BC13DA600D0A832 /* VTDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTDispatcher.swift; sourceTree = "<group>"; };
-		691A1C291BC13DA600D0A832 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
-		691A1C2A1BC13DA600D0A832 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
-		691A1C2D1BC13DA600D0A832 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
-		691A1C2E1BC13DA600D0A832 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
 		691A1C361BC13DA600D0A832 /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
 		691A1C381BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionNamespaces.swift; sourceTree = "<group>"; };
 		691A1C461BC13DCD00D0A832 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
@@ -65,6 +61,10 @@
 		691A1C4D1BC13DF500D0A832 /* VTTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimer.swift; sourceTree = "<group>"; };
 		691A1C4F1BC13E4E00D0A832 /* VTTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerBlock.swift; sourceTree = "<group>"; };
 		691A1C511BC1400F00D0A832 /* VTTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerExtensionInitialization.swift; sourceTree = "<group>"; };
+		691A1C551BC142CB00D0A832 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
+		691A1C561BC142CB00D0A832 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
+		691A1C591BC142CB00D0A832 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
+		691A1C5A1BC142CB00D0A832 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
 		694A60211BB0A056007D2837 /* VisualityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694A60241BB0A056007D2837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		694A602B1BB0A056007D2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,41 +118,6 @@
 			path = Dispatcher;
 			sourceTree = "<group>";
 		};
-		691A1C271BC13DA600D0A832 /* Gestures */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C281BC13DA600D0A832 /* Types */,
-				691A1C2B1BC13DA600D0A832 /* Views */,
-			);
-			path = Gestures;
-			sourceTree = "<group>";
-		};
-		691A1C281BC13DA600D0A832 /* Types */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C291BC13DA600D0A832 /* VTGestureState.swift */,
-				691A1C2A1BC13DA600D0A832 /* VTGestureType.swift */,
-			);
-			path = Types;
-			sourceTree = "<group>";
-		};
-		691A1C2B1BC13DA600D0A832 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C2C1BC13DA600D0A832 /* GestureView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		691A1C2C1BC13DA600D0A832 /* GestureView */ = {
-			isa = PBXGroup;
-			children = (
-				691A1C2D1BC13DA600D0A832 /* VTGestureView.swift */,
-				691A1C2E1BC13DA600D0A832 /* VTGestureViewDelegate.swift */,
-			);
-			path = GestureView;
-			sourceTree = "<group>";
-		};
 		691A1C341BC13DA600D0A832 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +155,7 @@
 		691A1C441BC13DCD00D0A832 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				691A1C531BC142CB00D0A832 /* Gestures */,
 				691A1C451BC13DCD00D0A832 /* Initialization */,
 				691A1C481BC13DCD00D0A832 /* Layout */,
 			);
@@ -211,6 +177,41 @@
 				691A1C491BC13DCD00D0A832 /* UIViewExtensionLayout.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		691A1C531BC142CB00D0A832 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				691A1C541BC142CB00D0A832 /* Types */,
+				691A1C571BC142CB00D0A832 /* Views */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		691A1C541BC142CB00D0A832 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				691A1C551BC142CB00D0A832 /* VTGestureState.swift */,
+				691A1C561BC142CB00D0A832 /* VTGestureType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		691A1C571BC142CB00D0A832 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				691A1C581BC142CB00D0A832 /* GestureView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		691A1C581BC142CB00D0A832 /* GestureView */ = {
+			isa = PBXGroup;
+			children = (
+				691A1C591BC142CB00D0A832 /* VTGestureView.swift */,
+				691A1C5A1BC142CB00D0A832 /* VTGestureViewDelegate.swift */,
+			);
+			path = GestureView;
 			sourceTree = "<group>";
 		};
 		694A60181BB0A056007D2837 = {
@@ -347,7 +348,6 @@
 			children = (
 				691A1C441BC13DCD00D0A832 /* Views */,
 				691A1C251BC13DA600D0A832 /* Dispatcher */,
-				691A1C271BC13DA600D0A832 /* Gestures */,
 				691A1C341BC13DA600D0A832 /* Navigation */,
 				691A1C371BC13DA600D0A832 /* Objects */,
 				691A1C391BC13DA600D0A832 /* Timer */,
@@ -488,24 +488,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				691A1C3D1BC13DA600D0A832 /* VTGestureView.swift in Sources */,
 				691A1C4C1BC13DCD00D0A832 /* UIViewExtensionLayout.swift in Sources */,
 				694A60731BB0B230007D2837 /* CircleView.swift in Sources */,
 				691A1C521BC1400F00D0A832 /* VTTimerExtensionInitialization.swift in Sources */,
 				691A1C4E1BC13DF500D0A832 /* VTTimer.swift in Sources */,
-				691A1C3C1BC13DA600D0A832 /* VTGestureType.swift in Sources */,
-				691A1C3B1BC13DA600D0A832 /* VTGestureState.swift in Sources */,
 				694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */,
 				691A1C4A1BC13DCD00D0A832 /* NSBundleExtensionContent.swift in Sources */,
 				691A1C501BC13E4E00D0A832 /* VTTimerBlock.swift in Sources */,
 				691A1C3A1BC13DA600D0A832 /* VTDispatcher.swift in Sources */,
 				691A1C421BC13DA600D0A832 /* VTNavigationManager.swift in Sources */,
+				691A1C5E1BC142CB00D0A832 /* VTGestureViewDelegate.swift in Sources */,
+				691A1C5C1BC142CB00D0A832 /* VTGestureType.swift in Sources */,
 				691A1C4B1BC13DCD00D0A832 /* UIViewExtensionInitialization.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,
 				696633561BB4182F00CBCFB4 /* FullScreenView.swift in Sources */,
+				691A1C5D1BC142CB00D0A832 /* VTGestureView.swift in Sources */,
 				691A1C431BC13DA600D0A832 /* NSObjectExtensionNamespaces.swift in Sources */,
-				691A1C3E1BC13DA600D0A832 /* VTGestureViewDelegate.swift in Sources */,
+				691A1C5B1BC142CB00D0A832 /* VTGestureState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
