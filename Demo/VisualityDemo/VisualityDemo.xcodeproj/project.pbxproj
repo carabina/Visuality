@@ -19,20 +19,20 @@
 		694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */; settings = {ASSET_TAGS = (); }; };
 		696633561BB4182F00CBCFB4 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696633551BB4182F00CBCFB4 /* FullScreenView.swift */; settings = {ASSET_TAGS = (); }; };
 		696633581BB4183B00CBCFB4 /* FullScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696633571BB4183B00CBCFB4 /* FullScreenView.xib */; settings = {ASSET_TAGS = (); }; };
-		69A150AB1BC1755800C46482 /* VTDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1508F1BC1755800C46482 /* VTDispatcher.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150AC1BC1755800C46482 /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150921BC1755800C46482 /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150AD1BC1755800C46482 /* NSObjectExtensionNamespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150941BC1755800C46482 /* NSObjectExtensionNamespaces.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150AE1BC1755800C46482 /* VTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150961BC1755800C46482 /* VTTimer.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150AF1BC1755800C46482 /* VTTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150971BC1755800C46482 /* VTTimerBlock.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B01BC1755800C46482 /* VTTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150981BC1755800C46482 /* VTTimerExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B11BC1755800C46482 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1509C1BC1755800C46482 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B21BC1755800C46482 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1509D1BC1755800C46482 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B31BC1755800C46482 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A01BC1755800C46482 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B41BC1755800C46482 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A11BC1755800C46482 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B51BC1755800C46482 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A31BC1755800C46482 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B61BC1755800C46482 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A41BC1755800C46482 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B71BC1755800C46482 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150A61BC1755800C46482 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
-		69A150B81BC1755800C46482 /* VTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A150AA1BC1755800C46482 /* VTTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		697168A71BC1A34E0080E960 /* NSDateExtensionComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971688D1BC1A34D0080E960 /* NSDateExtensionComponents.swift */; settings = {ASSET_TAGS = (); }; };
+		697168A81BC1A34E0080E960 /* VTDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971688F1BC1A34D0080E960 /* VTDispatcher.swift */; settings = {ASSET_TAGS = (); }; };
+		697168A91BC1A34E0080E960 /* VTNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168921BC1A34D0080E960 /* VTNavigationManager.swift */; settings = {ASSET_TAGS = (); }; };
+		697168AA1BC1A34E0080E960 /* NSObjectExtensionNamespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168941BC1A34D0080E960 /* NSObjectExtensionNamespaces.swift */; settings = {ASSET_TAGS = (); }; };
+		697168AB1BC1A34E0080E960 /* VTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168961BC1A34D0080E960 /* VTTimer.swift */; settings = {ASSET_TAGS = (); }; };
+		697168AC1BC1A34E0080E960 /* VTTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168971BC1A34D0080E960 /* VTTimerBlock.swift */; settings = {ASSET_TAGS = (); }; };
+		697168AD1BC1A34E0080E960 /* VTTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168981BC1A34E0080E960 /* VTTimerExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
+		697168AE1BC1A34E0080E960 /* VTGestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971689C1BC1A34E0080E960 /* VTGestureState.swift */; settings = {ASSET_TAGS = (); }; };
+		697168AF1BC1A34E0080E960 /* VTGestureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971689D1BC1A34E0080E960 /* VTGestureType.swift */; settings = {ASSET_TAGS = (); }; };
+		697168B01BC1A34E0080E960 /* VTGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A01BC1A34E0080E960 /* VTGestureView.swift */; settings = {ASSET_TAGS = (); }; };
+		697168B11BC1A34E0080E960 /* VTGestureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A11BC1A34E0080E960 /* VTGestureViewDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		697168B21BC1A34E0080E960 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A31BC1A34E0080E960 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
+		697168B31BC1A34E0080E960 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A41BC1A34E0080E960 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
+		697168B41BC1A34E0080E960 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A61BC1A34E0080E960 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,20 +71,20 @@
 		694DB7D31BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionListOfColors.swift; sourceTree = "<group>"; };
 		696633551BB4182F00CBCFB4 /* FullScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
 		696633571BB4183B00CBCFB4 /* FullScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullScreenView.xib; sourceTree = "<group>"; };
-		69A1508F1BC1755800C46482 /* VTDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTDispatcher.swift; sourceTree = "<group>"; };
-		69A150921BC1755800C46482 /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
-		69A150941BC1755800C46482 /* NSObjectExtensionNamespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionNamespaces.swift; sourceTree = "<group>"; };
-		69A150961BC1755800C46482 /* VTTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimer.swift; sourceTree = "<group>"; };
-		69A150971BC1755800C46482 /* VTTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerBlock.swift; sourceTree = "<group>"; };
-		69A150981BC1755800C46482 /* VTTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerExtensionInitialization.swift; sourceTree = "<group>"; };
-		69A1509C1BC1755800C46482 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
-		69A1509D1BC1755800C46482 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
-		69A150A01BC1755800C46482 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
-		69A150A11BC1755800C46482 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
-		69A150A31BC1755800C46482 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
-		69A150A41BC1755800C46482 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
-		69A150A61BC1755800C46482 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
-		69A150AA1BC1755800C46482 /* VTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTableViewCell.swift; sourceTree = "<group>"; };
+		6971688D1BC1A34D0080E960 /* NSDateExtensionComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionComponents.swift; sourceTree = "<group>"; };
+		6971688F1BC1A34D0080E960 /* VTDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTDispatcher.swift; sourceTree = "<group>"; };
+		697168921BC1A34D0080E960 /* VTNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNavigationManager.swift; sourceTree = "<group>"; };
+		697168941BC1A34D0080E960 /* NSObjectExtensionNamespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionNamespaces.swift; sourceTree = "<group>"; };
+		697168961BC1A34D0080E960 /* VTTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimer.swift; sourceTree = "<group>"; };
+		697168971BC1A34D0080E960 /* VTTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerBlock.swift; sourceTree = "<group>"; };
+		697168981BC1A34E0080E960 /* VTTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTTimerExtensionInitialization.swift; sourceTree = "<group>"; };
+		6971689C1BC1A34E0080E960 /* VTGestureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureState.swift; sourceTree = "<group>"; };
+		6971689D1BC1A34E0080E960 /* VTGestureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureType.swift; sourceTree = "<group>"; };
+		697168A01BC1A34E0080E960 /* VTGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureView.swift; sourceTree = "<group>"; };
+		697168A11BC1A34E0080E960 /* VTGestureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGestureViewDelegate.swift; sourceTree = "<group>"; };
+		697168A31BC1A34E0080E960 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
+		697168A41BC1A34E0080E960 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
+		697168A61BC1A34E0080E960 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,7 @@
 		694A60591BB0A0BD007D2837 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				69A1508D1BC1755800C46482 /* Visuality */,
+				6971688B1BC1A34D0080E960 /* Visuality */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -241,146 +241,130 @@
 			path = FullScreenView;
 			sourceTree = "<group>";
 		};
-		69A1508D1BC1755800C46482 /* Visuality */ = {
+		6971688B1BC1A34D0080E960 /* Visuality */ = {
 			isa = PBXGroup;
 			children = (
-				69A1508E1BC1755800C46482 /* Dispatcher */,
-				69A150901BC1755800C46482 /* Navigation */,
-				69A150931BC1755800C46482 /* Objects */,
-				69A150951BC1755800C46482 /* Timer */,
-				69A150991BC1755800C46482 /* Views */,
+				6971688C1BC1A34D0080E960 /* Date */,
+				6971688E1BC1A34D0080E960 /* Dispatcher */,
+				697168901BC1A34D0080E960 /* Navigation */,
+				697168931BC1A34D0080E960 /* Objects */,
+				697168951BC1A34D0080E960 /* Timer */,
+				697168991BC1A34E0080E960 /* Views */,
 			);
 			name = Visuality;
 			path = ../../../../Visuality;
 			sourceTree = "<group>";
 		};
-		69A1508E1BC1755800C46482 /* Dispatcher */ = {
+		6971688C1BC1A34D0080E960 /* Date */ = {
 			isa = PBXGroup;
 			children = (
-				69A1508F1BC1755800C46482 /* VTDispatcher.swift */,
+				6971688D1BC1A34D0080E960 /* NSDateExtensionComponents.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		6971688E1BC1A34D0080E960 /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				6971688F1BC1A34D0080E960 /* VTDispatcher.swift */,
 			);
 			path = Dispatcher;
 			sourceTree = "<group>";
 		};
-		69A150901BC1755800C46482 /* Navigation */ = {
+		697168901BC1A34D0080E960 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				69A150911BC1755800C46482 /* NavigationManager */,
+				697168911BC1A34D0080E960 /* NavigationManager */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		69A150911BC1755800C46482 /* NavigationManager */ = {
+		697168911BC1A34D0080E960 /* NavigationManager */ = {
 			isa = PBXGroup;
 			children = (
-				69A150921BC1755800C46482 /* VTNavigationManager.swift */,
+				697168921BC1A34D0080E960 /* VTNavigationManager.swift */,
 			);
 			path = NavigationManager;
 			sourceTree = "<group>";
 		};
-		69A150931BC1755800C46482 /* Objects */ = {
+		697168931BC1A34D0080E960 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				69A150941BC1755800C46482 /* NSObjectExtensionNamespaces.swift */,
+				697168941BC1A34D0080E960 /* NSObjectExtensionNamespaces.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		69A150951BC1755800C46482 /* Timer */ = {
+		697168951BC1A34D0080E960 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				69A150961BC1755800C46482 /* VTTimer.swift */,
-				69A150971BC1755800C46482 /* VTTimerBlock.swift */,
-				69A150981BC1755800C46482 /* VTTimerExtensionInitialization.swift */,
+				697168961BC1A34D0080E960 /* VTTimer.swift */,
+				697168971BC1A34D0080E960 /* VTTimerBlock.swift */,
+				697168981BC1A34E0080E960 /* VTTimerExtensionInitialization.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
 		};
-		69A150991BC1755800C46482 /* Views */ = {
+		697168991BC1A34E0080E960 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69A1509A1BC1755800C46482 /* Gestures */,
-				69A150A21BC1755800C46482 /* Initialization */,
-				69A150A51BC1755800C46482 /* Layout */,
-				69A150A71BC1755800C46482 /* TableView */,
+				6971689A1BC1A34E0080E960 /* Gestures */,
+				697168A21BC1A34E0080E960 /* Initialization */,
+				697168A51BC1A34E0080E960 /* Layout */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		69A1509A1BC1755800C46482 /* Gestures */ = {
+		6971689A1BC1A34E0080E960 /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
-				69A1509B1BC1755800C46482 /* Types */,
-				69A1509E1BC1755800C46482 /* Views */,
+				6971689B1BC1A34E0080E960 /* Types */,
+				6971689E1BC1A34E0080E960 /* Views */,
 			);
 			path = Gestures;
 			sourceTree = "<group>";
 		};
-		69A1509B1BC1755800C46482 /* Types */ = {
+		6971689B1BC1A34E0080E960 /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				69A1509C1BC1755800C46482 /* VTGestureState.swift */,
-				69A1509D1BC1755800C46482 /* VTGestureType.swift */,
+				6971689C1BC1A34E0080E960 /* VTGestureState.swift */,
+				6971689D1BC1A34E0080E960 /* VTGestureType.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
 		};
-		69A1509E1BC1755800C46482 /* Views */ = {
+		6971689E1BC1A34E0080E960 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69A1509F1BC1755800C46482 /* GestureView */,
+				6971689F1BC1A34E0080E960 /* GestureView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		69A1509F1BC1755800C46482 /* GestureView */ = {
+		6971689F1BC1A34E0080E960 /* GestureView */ = {
 			isa = PBXGroup;
 			children = (
-				69A150A01BC1755800C46482 /* VTGestureView.swift */,
-				69A150A11BC1755800C46482 /* VTGestureViewDelegate.swift */,
+				697168A01BC1A34E0080E960 /* VTGestureView.swift */,
+				697168A11BC1A34E0080E960 /* VTGestureViewDelegate.swift */,
 			);
 			path = GestureView;
 			sourceTree = "<group>";
 		};
-		69A150A21BC1755800C46482 /* Initialization */ = {
+		697168A21BC1A34E0080E960 /* Initialization */ = {
 			isa = PBXGroup;
 			children = (
-				69A150A31BC1755800C46482 /* NSBundleExtensionContent.swift */,
-				69A150A41BC1755800C46482 /* UIViewExtensionInitialization.swift */,
+				697168A31BC1A34E0080E960 /* NSBundleExtensionContent.swift */,
+				697168A41BC1A34E0080E960 /* UIViewExtensionInitialization.swift */,
 			);
 			path = Initialization;
 			sourceTree = "<group>";
 		};
-		69A150A51BC1755800C46482 /* Layout */ = {
+		697168A51BC1A34E0080E960 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				69A150A61BC1755800C46482 /* UIViewExtensionLayout.swift */,
+				697168A61BC1A34E0080E960 /* UIViewExtensionLayout.swift */,
 			);
 			path = Layout;
-			sourceTree = "<group>";
-		};
-		69A150A71BC1755800C46482 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				69A150A81BC1755800C46482 /* Cells */,
-			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		69A150A81BC1755800C46482 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				69A150A91BC1755800C46482 /* TableViewCell */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		69A150A91BC1755800C46482 /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				69A150AA1BC1755800C46482 /* VTTableViewCell.swift */,
-			);
-			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,24 +499,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697168B21BC1A34E0080E960 /* NSBundleExtensionContent.swift in Sources */,
 				694A60731BB0B230007D2837 /* CircleView.swift in Sources */,
-				69A150AF1BC1755800C46482 /* VTTimerBlock.swift in Sources */,
+				697168AC1BC1A34E0080E960 /* VTTimerBlock.swift in Sources */,
+				697168AA1BC1A34E0080E960 /* NSObjectExtensionNamespaces.swift in Sources */,
+				697168AD1BC1A34E0080E960 /* VTTimerExtensionInitialization.swift in Sources */,
+				697168A91BC1A34E0080E960 /* VTNavigationManager.swift in Sources */,
+				697168B31BC1A34E0080E960 /* UIViewExtensionInitialization.swift in Sources */,
+				697168B11BC1A34E0080E960 /* VTGestureViewDelegate.swift in Sources */,
 				694DB7D41BB0CAF5002FD338 /* UIColorExtensionListOfColors.swift in Sources */,
-				69A150AC1BC1755800C46482 /* VTNavigationManager.swift in Sources */,
-				69A150AD1BC1755800C46482 /* NSObjectExtensionNamespaces.swift in Sources */,
-				69A150B11BC1755800C46482 /* VTGestureState.swift in Sources */,
-				69A150AB1BC1755800C46482 /* VTDispatcher.swift in Sources */,
-				69A150AE1BC1755800C46482 /* VTTimer.swift in Sources */,
-				69A150B61BC1755800C46482 /* UIViewExtensionInitialization.swift in Sources */,
+				697168B41BC1A34E0080E960 /* UIViewExtensionLayout.swift in Sources */,
+				697168B01BC1A34E0080E960 /* VTGestureView.swift in Sources */,
+				697168A81BC1A34E0080E960 /* VTDispatcher.swift in Sources */,
+				697168AF1BC1A34E0080E960 /* VTGestureType.swift in Sources */,
 				694A60251BB0A056007D2837 /* AppDelegate.swift in Sources */,
-				69A150B41BC1755800C46482 /* VTGestureViewDelegate.swift in Sources */,
-				69A150B01BC1755800C46482 /* VTTimerExtensionInitialization.swift in Sources */,
-				69A150B31BC1755800C46482 /* VTGestureView.swift in Sources */,
-				69A150B51BC1755800C46482 /* NSBundleExtensionContent.swift in Sources */,
-				69A150B81BC1755800C46482 /* VTTableViewCell.swift in Sources */,
+				697168AE1BC1A34E0080E960 /* VTGestureState.swift in Sources */,
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,
-				69A150B21BC1755800C46482 /* VTGestureType.swift in Sources */,
-				69A150B71BC1755800C46482 /* UIViewExtensionLayout.swift in Sources */,
+				697168AB1BC1A34E0080E960 /* VTTimer.swift in Sources */,
+				697168A71BC1A34E0080E960 /* NSDateExtensionComponents.swift in Sources */,
 				696633561BB4182F00CBCFB4 /* FullScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
