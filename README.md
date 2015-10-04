@@ -3,7 +3,7 @@
 </p>
 
 # Visuality
-`Visuality` is a library for iOS which includes set of classes and extensions that simplify work with UI. Written in Swift.
+`Visuality` is a library for iOS which includes set of classes and extensions that simplify work with native SDK in Swift.
 
 ##How To Get Started
 
@@ -11,7 +11,7 @@ Copy content of `Visuality` folder to your project.
 
 ## Requirements
 
-* iOS 7 and later
+* iOS 8 and later
 * Xcode 7 and later
 
 ## Usage
