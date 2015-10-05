@@ -33,6 +33,7 @@
 		697168B21BC1A34E0080E960 /* NSBundleExtensionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A31BC1A34E0080E960 /* NSBundleExtensionContent.swift */; settings = {ASSET_TAGS = (); }; };
 		697168B31BC1A34E0080E960 /* UIViewExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A41BC1A34E0080E960 /* UIViewExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
 		697168B41BC1A34E0080E960 /* UIViewExtensionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168A61BC1A34E0080E960 /* UIViewExtensionLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		697168E41BC1F49C0080E960 /* UIColorExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697168E31BC1F49C0080E960 /* UIColorExtensionInitialization.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		697168A31BC1A34E0080E960 /* NSBundleExtensionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleExtensionContent.swift; sourceTree = "<group>"; };
 		697168A41BC1A34E0080E960 /* UIViewExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionInitialization.swift; sourceTree = "<group>"; };
 		697168A61BC1A34E0080E960 /* UIViewExtensionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionLayout.swift; sourceTree = "<group>"; };
+		697168E31BC1F49C0080E960 /* UIColorExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionInitialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 		6971688B1BC1A34D0080E960 /* Visuality */ = {
 			isa = PBXGroup;
 			children = (
+				697168E01BC1F4390080E960 /* Color */,
 				6971688C1BC1A34D0080E960 /* Date */,
 				6971688E1BC1A34D0080E960 /* Dispatcher */,
 				697168901BC1A34D0080E960 /* Navigation */,
@@ -365,6 +368,14 @@
 				697168A61BC1A34E0080E960 /* UIViewExtensionLayout.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		697168E01BC1F4390080E960 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				697168E31BC1F49C0080E960 /* UIColorExtensionInitialization.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +528,7 @@
 				694A60571BB0A09A007D2837 /* MainViewController.swift in Sources */,
 				697168AB1BC1A34E0080E960 /* VTTimer.swift in Sources */,
 				697168A71BC1A34E0080E960 /* NSDateExtensionComponents.swift in Sources */,
+				697168E41BC1F49C0080E960 /* UIColorExtensionInitialization.swift in Sources */,
 				696633561BB4182F00CBCFB4 /* FullScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
